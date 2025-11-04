@@ -1,6 +1,5 @@
 local G2L = {};
 
--- StarterGui.Ravion
 G2L["1"] = Instance.new("ScreenGui", game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"));
 G2L["1"]["IgnoreGuiInset"] = true;
 G2L["1"]["ScreenInsets"] = Enum.ScreenInsets.DeviceSafeInsets;
@@ -9,7 +8,6 @@ G2L["1"]["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling;
 G2L["1"]["ResetOnSpawn"] = false;
 
 
--- StarterGui.Ravion.Main
 G2L["2"] = Instance.new("Frame", G2L["1"]);
 G2L["2"]["Active"] = true;
 G2L["2"]["BorderSizePixel"] = 0;
@@ -21,17 +19,14 @@ G2L["2"]["Position"] = UDim2.new(0.5, 0, 0.5, 0);
 G2L["2"]["Name"] = [[Main]];
 
 
--- StarterGui.Ravion.Main.DraggableMain
 G2L["3"] = Instance.new("LocalScript", G2L["2"]);
 G2L["3"]["Name"] = [[DraggableMain]];
 
 
--- StarterGui.Ravion.Main.TabSwitcher
 G2L["4"] = Instance.new("LocalScript", G2L["2"]);
 G2L["4"]["Name"] = [[TabSwitcher]];
 
 
--- StarterGui.Ravion.Main.Tabs
 G2L["5"] = Instance.new("Frame", G2L["2"]);
 G2L["5"]["Size"] = UDim2.new(1, 0, -0.11141, 50);
 G2L["5"]["Position"] = UDim2.new(0, 0, 0.21364, 0);
@@ -39,7 +34,6 @@ G2L["5"]["Name"] = [[Tabs]];
 G2L["5"]["BackgroundTransparency"] = 1;
 
 
--- StarterGui.Ravion.Main.Tabs.StealerBtn
 G2L["6"] = Instance.new("TextButton", G2L["5"]);
 G2L["6"]["BorderSizePixel"] = 0;
 G2L["6"]["TextSize"] = 14;
@@ -55,19 +49,16 @@ G2L["6"]["Name"] = [[StealerBtn]];
 G2L["6"]["Position"] = UDim2.new(0.03774, 0, -0.15692, 0);
 
 
--- StarterGui.Ravion.Main.Tabs.StealerBtn.UICorner
 G2L["7"] = Instance.new("UICorner", G2L["6"]);
 G2L["7"]["CornerRadius"] = UDim.new(0, 10);
 
 
--- StarterGui.Ravion.Main.Tabs.StealerBtn.UIStroke
 G2L["8"] = Instance.new("UIStroke", G2L["6"]);
 G2L["8"]["Transparency"] = 0.5;
 G2L["8"]["Color"] = Color3.fromRGB(41, 41, 53);
 G2L["8"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
 
 
--- StarterGui.Ravion.Main.Tabs.HelperBtn
 G2L["9"] = Instance.new("TextButton", G2L["5"]);
 G2L["9"]["BorderSizePixel"] = 0;
 G2L["9"]["TextSize"] = 14;
@@ -84,19 +75,16 @@ G2L["9"]["Name"] = [[HelperBtn]];
 G2L["9"]["Position"] = UDim2.new(0.27686, 0, -0.01952, 0);
 
 
--- StarterGui.Ravion.Main.Tabs.HelperBtn.UICorner
 G2L["a"] = Instance.new("UICorner", G2L["9"]);
 G2L["a"]["CornerRadius"] = UDim.new(0, 10);
 
 
--- StarterGui.Ravion.Main.Tabs.HelperBtn.UIStroke
 G2L["b"] = Instance.new("UIStroke", G2L["9"]);
 G2L["b"]["Transparency"] = 0.5;
 G2L["b"]["Color"] = Color3.fromRGB(41, 41, 53);
 G2L["b"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
 
 
--- StarterGui.Ravion.Main.Tabs.ServerBtn
 G2L["c"] = Instance.new("TextButton", G2L["5"]);
 G2L["c"]["BorderSizePixel"] = 0;
 G2L["c"]["TextSize"] = 14;
@@ -113,19 +101,16 @@ G2L["c"]["Name"] = [[ServerBtn]];
 G2L["c"]["Position"] = UDim2.new(0.50642, 0, -0.01952, 0);
 
 
--- StarterGui.Ravion.Main.Tabs.ServerBtn.UICorner
 G2L["d"] = Instance.new("UICorner", G2L["c"]);
 G2L["d"]["CornerRadius"] = UDim.new(0, 10);
 
 
--- StarterGui.Ravion.Main.Tabs.ServerBtn.UIStroke
 G2L["e"] = Instance.new("UIStroke", G2L["c"]);
 G2L["e"]["Transparency"] = 0.5;
 G2L["e"]["Color"] = Color3.fromRGB(41, 41, 53);
 G2L["e"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
 
 
--- StarterGui.Ravion.Main.Tabs.UIListLayout
 G2L["f"] = Instance.new("UIListLayout", G2L["5"]);
 G2L["f"]["HorizontalAlignment"] = Enum.HorizontalAlignment.Center;
 G2L["f"]["Padding"] = UDim.new(0, 8);
@@ -133,7 +118,6 @@ G2L["f"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
 G2L["f"]["FillDirection"] = Enum.FillDirection.Horizontal;
 
 
--- StarterGui.Ravion.Main.Tabs.SettingBtn
 G2L["10"] = Instance.new("TextButton", G2L["5"]);
 G2L["10"]["BorderSizePixel"] = 0;
 G2L["10"]["TextSize"] = 14;
@@ -150,19 +134,16 @@ G2L["10"]["Name"] = [[SettingBtn]];
 G2L["10"]["Position"] = UDim2.new(0.73598, 0, -0.01952, 0);
 
 
--- StarterGui.Ravion.Main.Tabs.SettingBtn.UICorner
 G2L["11"] = Instance.new("UICorner", G2L["10"]);
 G2L["11"]["CornerRadius"] = UDim.new(0, 10);
 
 
--- StarterGui.Ravion.Main.Tabs.SettingBtn.UIStroke
 G2L["12"] = Instance.new("UIStroke", G2L["10"]);
 G2L["12"]["Transparency"] = 0.5;
 G2L["12"]["Color"] = Color3.fromRGB(41, 41, 53);
 G2L["12"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
 
 
--- StarterGui.Ravion.Main.Stealer
 G2L["13"] = Instance.new("Frame", G2L["2"]);
 G2L["13"]["Visible"] = false;
 G2L["13"]["BorderSizePixel"] = 0;
@@ -174,18 +155,15 @@ G2L["13"]["Name"] = [[Stealer]];
 G2L["13"]["BackgroundTransparency"] = 1;
 
 
--- StarterGui.Ravion.Main.Stealer.UICorner
 G2L["14"] = Instance.new("UICorner", G2L["13"]);
 G2L["14"]["CornerRadius"] = UDim.new(0, 16);
 
 
--- StarterGui.Ravion.Main.Stealer.UIStroke
 G2L["15"] = Instance.new("UIStroke", G2L["13"]);
 G2L["15"]["Transparency"] = 0.5;
 G2L["15"]["Color"] = Color3.fromRGB(41, 41, 53);
 
 
--- StarterGui.Ravion.Main.Stealer.Stealer
 G2L["16"] = Instance.new("ScrollingFrame", G2L["13"]);
 G2L["16"]["Active"] = true;
 G2L["16"]["ScrollingDirection"] = Enum.ScrollingDirection.Y;
@@ -203,12 +181,10 @@ G2L["16"]["ScrollBarThickness"] = 0;
 G2L["16"]["BackgroundTransparency"] = 1;
 
 
--- StarterGui.Ravion.Main.Stealer.Stealer.UICorner
 G2L["17"] = Instance.new("UICorner", G2L["16"]);
 G2L["17"]["CornerRadius"] = UDim.new(0, 16);
 
 
--- StarterGui.Ravion.Main.Stealer.Stealer.Float
 G2L["18"] = Instance.new("Frame", G2L["16"]);
 G2L["18"]["BorderSizePixel"] = 0;
 G2L["18"]["BackgroundColor3"] = Color3.fromRGB(27, 27, 35);
@@ -218,18 +194,15 @@ G2L["18"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["18"]["Name"] = [[Float]];
 
 
--- StarterGui.Ravion.Main.Stealer.Stealer.Float.UICorner
 G2L["19"] = Instance.new("UICorner", G2L["18"]);
 G2L["19"]["CornerRadius"] = UDim.new(0, 16);
 
 
--- StarterGui.Ravion.Main.Stealer.Stealer.Float.UIStroke
 G2L["1a"] = Instance.new("UIStroke", G2L["18"]);
 G2L["1a"]["Transparency"] = 0.5;
 G2L["1a"]["Color"] = Color3.fromRGB(41, 41, 53);
 
 
--- StarterGui.Ravion.Main.Stealer.Stealer.Float.Toggle
 G2L["1b"] = Instance.new("TextButton", G2L["18"]);
 G2L["1b"]["BorderSizePixel"] = 0;
 G2L["1b"]["TextSize"] = 14;
@@ -244,24 +217,20 @@ G2L["1b"]["Name"] = [[Toggle]];
 G2L["1b"]["Position"] = UDim2.new(0.83219, 0, 0.06897, 0);
 
 
--- StarterGui.Ravion.Main.Stealer.Stealer.Float.Toggle.Float1Script
 G2L["1c"] = Instance.new("LocalScript", G2L["1b"]);
 G2L["1c"]["Name"] = [[Float1Script]];
 
 
--- StarterGui.Ravion.Main.Stealer.Stealer.Float.Toggle.UICorner
 G2L["1d"] = Instance.new("UICorner", G2L["1b"]);
 G2L["1d"]["CornerRadius"] = UDim.new(0, 16);
 
 
--- StarterGui.Ravion.Main.Stealer.Stealer.Float.Toggle.UIStroke
 G2L["1e"] = Instance.new("UIStroke", G2L["1b"]);
 G2L["1e"]["Transparency"] = 0.5;
 G2L["1e"]["Color"] = Color3.fromRGB(35, 35, 45);
 G2L["1e"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
 
 
--- StarterGui.Ravion.Main.Stealer.Stealer.Float.Toggle.Circle
 G2L["1f"] = Instance.new("Frame", G2L["1b"]);
 G2L["1f"]["BorderSizePixel"] = 0;
 G2L["1f"]["BackgroundColor3"] = Color3.fromRGB(31, 33, 43);
@@ -271,12 +240,10 @@ G2L["1f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["1f"]["Name"] = [[Circle]];
 
 
--- StarterGui.Ravion.Main.Stealer.Stealer.Float.Toggle.Circle.UICorner
 G2L["20"] = Instance.new("UICorner", G2L["1f"]);
 G2L["20"]["CornerRadius"] = UDim.new(0.9, 0);
 
 
--- StarterGui.Ravion.Main.Stealer.Stealer.Float.TextLabel
 G2L["21"] = Instance.new("TextLabel", G2L["18"]);
 G2L["21"]["BorderSizePixel"] = 0;
 G2L["21"]["TextSize"] = 14;
@@ -291,14 +258,12 @@ G2L["21"]["Text"] = [[Float ]];
 G2L["21"]["Position"] = UDim2.new(0.04362, 0, 0.24138, 0);
 
 
--- StarterGui.Ravion.Main.Stealer.Stealer.UIListLayout
 G2L["22"] = Instance.new("UIListLayout", G2L["16"]);
 G2L["22"]["HorizontalAlignment"] = Enum.HorizontalAlignment.Center;
 G2L["22"]["Padding"] = UDim.new(0, 6);
 G2L["22"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
 
 
--- StarterGui.Ravion.Main.Stealer.Stealer.3rd Floor
 G2L["23"] = Instance.new("Frame", G2L["16"]);
 G2L["23"]["BorderSizePixel"] = 0;
 G2L["23"]["BackgroundColor3"] = Color3.fromRGB(27, 27, 35);
@@ -308,12 +273,10 @@ G2L["23"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["23"]["Name"] = [[3rd Floor]];
 
 
--- StarterGui.Ravion.Main.Stealer.Stealer.3rd Floor.UICorner
 G2L["24"] = Instance.new("UICorner", G2L["23"]);
 G2L["24"]["CornerRadius"] = UDim.new(0, 16);
 
 
--- StarterGui.Ravion.Main.Stealer.Stealer.3rd Floor.Toggle
 G2L["25"] = Instance.new("TextButton", G2L["23"]);
 G2L["25"]["BorderSizePixel"] = 0;
 G2L["25"]["TextSize"] = 14;
@@ -328,17 +291,14 @@ G2L["25"]["Name"] = [[Toggle]];
 G2L["25"]["Position"] = UDim2.new(0.83219, 0, 0.06897, 0);
 
 
--- StarterGui.Ravion.Main.Stealer.Stealer.3rd Floor.Toggle.3rdFloorScript
 G2L["26"] = Instance.new("LocalScript", G2L["25"]);
 G2L["26"]["Name"] = [[3rdFloorScript]];
 
 
--- StarterGui.Ravion.Main.Stealer.Stealer.3rd Floor.Toggle.UICorner
 G2L["27"] = Instance.new("UICorner", G2L["25"]);
 G2L["27"]["CornerRadius"] = UDim.new(0, 16);
 
 
--- StarterGui.Ravion.Main.Stealer.Stealer.3rd Floor.Toggle.Circle
 G2L["28"] = Instance.new("Frame", G2L["25"]);
 G2L["28"]["BorderSizePixel"] = 0;
 G2L["28"]["BackgroundColor3"] = Color3.fromRGB(31, 33, 43);
@@ -348,19 +308,16 @@ G2L["28"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["28"]["Name"] = [[Circle]];
 
 
--- StarterGui.Ravion.Main.Stealer.Stealer.3rd Floor.Toggle.Circle.UICorner
 G2L["29"] = Instance.new("UICorner", G2L["28"]);
 G2L["29"]["CornerRadius"] = UDim.new(0.9, 0);
 
 
--- StarterGui.Ravion.Main.Stealer.Stealer.3rd Floor.Toggle.UIStroke
 G2L["2a"] = Instance.new("UIStroke", G2L["25"]);
 G2L["2a"]["Transparency"] = 0.5;
 G2L["2a"]["Color"] = Color3.fromRGB(35, 35, 45);
 G2L["2a"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
 
 
--- StarterGui.Ravion.Main.Stealer.Stealer.3rd Floor.TextLabel
 G2L["2b"] = Instance.new("TextLabel", G2L["23"]);
 G2L["2b"]["BorderSizePixel"] = 0;
 G2L["2b"]["TextSize"] = 14;
@@ -375,35 +332,103 @@ G2L["2b"]["Text"] = [[3rd Floor]];
 G2L["2b"]["Position"] = UDim2.new(0.04362, 0, 0.24138, 0);
 
 
--- StarterGui.Ravion.Main.Stealer.Stealer.3rd Floor.UIStroke
 G2L["2c"] = Instance.new("UIStroke", G2L["23"]);
 G2L["2c"]["Transparency"] = 0.5;
 G2L["2c"]["Color"] = Color3.fromRGB(35, 35, 45);
 G2L["2c"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
 
 
--- StarterGui.Ravion.Main.Stealer.Stealer.Infinity jump
+G2L["2c1"] = Instance.new("Frame", G2L["16"]);
+G2L["2c1"]["BorderSizePixel"] = 0;
+G2L["2c1"]["BackgroundColor3"] = Color3.fromRGB(27, 27, 35);
+G2L["2c1"]["Size"] = UDim2.new(0, 292, 0, 29);
+G2L["2c1"]["Position"] = UDim2.new(0.02288, 0, 0.0597, 0);
+G2L["2c1"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2c1"]["Name"] = [[Semi Invis]];
+
+
+G2L["2c2"] = Instance.new("UICorner", G2L["2c1"]);
+G2L["2c2"]["CornerRadius"] = UDim.new(0, 16);
+
+
+G2L["2c3"] = Instance.new("UIStroke", G2L["2c1"]);
+G2L["2c3"]["Transparency"] = 0.5;
+G2L["2c3"]["Color"] = Color3.fromRGB(41, 41, 53);
+
+
+G2L["2c4"] = Instance.new("TextButton", G2L["2c1"]);
+G2L["2c4"]["BorderSizePixel"] = 0;
+G2L["2c4"]["TextSize"] = 14;
+G2L["2c4"]["AutoButtonColor"] = false;
+G2L["2c4"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2c4"]["BackgroundColor3"] = Color3.fromRGB(19, 19, 25);
+G2L["2c4"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["2c4"]["Size"] = UDim2.new(0, 43, 0, 25);
+G2L["2c4"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2c4"]["Text"] = [[]];
+G2L["2c4"]["Name"] = [[Toggle]];
+G2L["2c4"]["Position"] = UDim2.new(0.83219, 0, 0.06897, 0);
+
+
+G2L["2c5"] = Instance.new("LocalScript", G2L["2c4"]);
+G2L["2c5"]["Name"] = [[SemiInvisScript]];
+
+
+G2L["2c6"] = Instance.new("UICorner", G2L["2c4"]);
+G2L["2c6"]["CornerRadius"] = UDim.new(0, 16);
+
+
+G2L["2c7"] = Instance.new("UIStroke", G2L["2c4"]);
+G2L["2c7"]["Transparency"] = 0.5;
+G2L["2c7"]["Color"] = Color3.fromRGB(35, 35, 45);
+G2L["2c7"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+
+
+G2L["2c8"] = Instance.new("Frame", G2L["2c4"]);
+G2L["2c8"]["BorderSizePixel"] = 0;
+G2L["2c8"]["BackgroundColor3"] = Color3.fromRGB(31, 33, 43);
+G2L["2c8"]["Size"] = UDim2.new(0, 15, 0, 15);
+G2L["2c8"]["Position"] = UDim2.new(0.15, 0, 0.2, 0);
+G2L["2c8"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2c8"]["Name"] = [[Circle]];
+
+
+G2L["2c9"] = Instance.new("UICorner", G2L["2c8"]);
+G2L["2c9"]["CornerRadius"] = UDim.new(0.9, 0);
+
+
+G2L["2ca"] = Instance.new("TextLabel", G2L["2c1"]);
+G2L["2ca"]["BorderSizePixel"] = 0;
+G2L["2ca"]["TextSize"] = 14;
+G2L["2ca"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["2ca"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2ca"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Medium, Enum.FontStyle.Normal);
+G2L["2ca"]["TextColor3"] = Color3.fromRGB(213, 213, 213);
+G2L["2ca"]["BackgroundTransparency"] = 1;
+G2L["2ca"]["Size"] = UDim2.new(0, 155, 0, 15);
+G2L["2ca"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2ca"]["Text"] = [[Semi Invis]];
+G2L["2ca"]["Position"] = UDim2.new(0.04362, 0, 0.24138, 0);
+
+
 G2L["2d"] = Instance.new("Frame", G2L["16"]);
 G2L["2d"]["BorderSizePixel"] = 0;
 G2L["2d"]["BackgroundColor3"] = Color3.fromRGB(27, 27, 35);
 G2L["2d"]["Size"] = UDim2.new(0, 292, 0, 29);
-G2L["2d"]["Position"] = UDim2.new(0.02288, 0, 0.0597, 0);
+G2L["2d"]["Position"] = UDim2.new(0.02288, 0, 0.32836, 0);
 G2L["2d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["2d"]["Name"] = [[Infinity jump]];
 
 
--- StarterGui.Ravion.Main.Stealer.Stealer.Infinity jump.UICorner
 G2L["2e"] = Instance.new("UICorner", G2L["2d"]);
 G2L["2e"]["CornerRadius"] = UDim.new(0, 16);
 
 
--- StarterGui.Ravion.Main.Stealer.Stealer.Infinity jump.UIStroke
 G2L["2f"] = Instance.new("UIStroke", G2L["2d"]);
 G2L["2f"]["Transparency"] = 0.5;
 G2L["2f"]["Color"] = Color3.fromRGB(41, 41, 53);
 
 
--- StarterGui.Ravion.Main.Stealer.Stealer.Infinity jump.Toggle
 G2L["30"] = Instance.new("TextButton", G2L["2d"]);
 G2L["30"]["BorderSizePixel"] = 0;
 G2L["30"]["TextSize"] = 14;
@@ -418,24 +443,20 @@ G2L["30"]["Name"] = [[Toggle]];
 G2L["30"]["Position"] = UDim2.new(0.83219, 0, 0.06897, 0);
 
 
--- StarterGui.Ravion.Main.Stealer.Stealer.Infinity jump.Toggle.InfinityjumpScript
 G2L["31"] = Instance.new("LocalScript", G2L["30"]);
 G2L["31"]["Name"] = [[InfinityjumpScript]];
 
 
--- StarterGui.Ravion.Main.Stealer.Stealer.Infinity jump.Toggle.UICorner
 G2L["32"] = Instance.new("UICorner", G2L["30"]);
 G2L["32"]["CornerRadius"] = UDim.new(0, 16);
 
 
--- StarterGui.Ravion.Main.Stealer.Stealer.Infinity jump.Toggle.UIStroke
 G2L["33"] = Instance.new("UIStroke", G2L["30"]);
 G2L["33"]["Transparency"] = 0.5;
 G2L["33"]["Color"] = Color3.fromRGB(35, 35, 45);
 G2L["33"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
 
 
--- StarterGui.Ravion.Main.Stealer.Stealer.Infinity jump.Toggle.Circle
 G2L["34"] = Instance.new("Frame", G2L["30"]);
 G2L["34"]["BorderSizePixel"] = 0;
 G2L["34"]["BackgroundColor3"] = Color3.fromRGB(31, 33, 43);
@@ -445,12 +466,10 @@ G2L["34"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["34"]["Name"] = [[Circle]];
 
 
--- StarterGui.Ravion.Main.Stealer.Stealer.Infinity jump.Toggle.Circle.UICorner
 G2L["35"] = Instance.new("UICorner", G2L["34"]);
 G2L["35"]["CornerRadius"] = UDim.new(0.9, 0);
 
 
--- StarterGui.Ravion.Main.Stealer.Stealer.Infinity jump.TextLabel
 G2L["36"] = Instance.new("TextLabel", G2L["2d"]);
 G2L["36"]["BorderSizePixel"] = 0;
 G2L["36"]["TextSize"] = 14;
@@ -465,7 +484,6 @@ G2L["36"]["Text"] = [[Infinity jump]];
 G2L["36"]["Position"] = UDim2.new(0.04362, 0, 0.24138, 0);
 
 
--- StarterGui.Ravion.Main.Helper
 G2L["37"] = Instance.new("Frame", G2L["2"]);
 G2L["37"]["BorderSizePixel"] = 0;
 G2L["37"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
@@ -476,18 +494,15 @@ G2L["37"]["Name"] = [[Helper]];
 G2L["37"]["BackgroundTransparency"] = 1;
 
 
--- StarterGui.Ravion.Main.Helper.UICorner
 G2L["38"] = Instance.new("UICorner", G2L["37"]);
 G2L["38"]["CornerRadius"] = UDim.new(0, 16);
 
 
--- StarterGui.Ravion.Main.Helper.UIStroke
 G2L["39"] = Instance.new("UIStroke", G2L["37"]);
 G2L["39"]["Transparency"] = 0.5;
 G2L["39"]["Color"] = Color3.fromRGB(41, 41, 53);
 
 
--- StarterGui.Ravion.Main.Helper.Helper
 G2L["3a"] = Instance.new("ScrollingFrame", G2L["37"]);
 G2L["3a"]["Active"] = true;
 G2L["3a"]["ScrollingDirection"] = Enum.ScrollingDirection.Y;
@@ -505,19 +520,16 @@ G2L["3a"]["ScrollBarThickness"] = 0;
 G2L["3a"]["BackgroundTransparency"] = 1;
 
 
--- StarterGui.Ravion.Main.Helper.Helper.UICorner
 G2L["3b"] = Instance.new("UICorner", G2L["3a"]);
 G2L["3b"]["CornerRadius"] = UDim.new(0, 16);
 
 
--- StarterGui.Ravion.Main.Helper.Helper.UIListLayout
 G2L["3c"] = Instance.new("UIListLayout", G2L["3a"]);
 G2L["3c"]["HorizontalAlignment"] = Enum.HorizontalAlignment.Center;
 G2L["3c"]["Padding"] = UDim.new(0, 6);
 G2L["3c"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
 
 
--- StarterGui.Ravion.Main.Helper.Helper.God mode
 G2L["3d"] = Instance.new("Frame", G2L["3a"]);
 G2L["3d"]["BorderSizePixel"] = 0;
 G2L["3d"]["BackgroundColor3"] = Color3.fromRGB(27, 27, 35);
@@ -527,18 +539,15 @@ G2L["3d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["3d"]["Name"] = [[God mode]];
 
 
--- StarterGui.Ravion.Main.Helper.Helper.God mode.UICorner
 G2L["3e"] = Instance.new("UICorner", G2L["3d"]);
 G2L["3e"]["CornerRadius"] = UDim.new(0, 16);
 
 
--- StarterGui.Ravion.Main.Helper.Helper.God mode.UIStroke
 G2L["3f"] = Instance.new("UIStroke", G2L["3d"]);
 G2L["3f"]["Transparency"] = 0.5;
 G2L["3f"]["Color"] = Color3.fromRGB(41, 41, 53);
 
 
--- StarterGui.Ravion.Main.Helper.Helper.God mode.Toggle
 G2L["40"] = Instance.new("TextButton", G2L["3d"]);
 G2L["40"]["BorderSizePixel"] = 0;
 G2L["40"]["TextSize"] = 14;
@@ -553,24 +562,20 @@ G2L["40"]["Name"] = [[Toggle]];
 G2L["40"]["Position"] = UDim2.new(0.83219, 0, 0.06897, 0);
 
 
--- StarterGui.Ravion.Main.Helper.Helper.God mode.Toggle.GodmodeScript
 G2L["41"] = Instance.new("LocalScript", G2L["40"]);
 G2L["41"]["Name"] = [[GodmodeScript]];
 
 
--- StarterGui.Ravion.Main.Helper.Helper.God mode.Toggle.UICorner
 G2L["42"] = Instance.new("UICorner", G2L["40"]);
 G2L["42"]["CornerRadius"] = UDim.new(0, 16);
 
 
--- StarterGui.Ravion.Main.Helper.Helper.God mode.Toggle.UIStroke
 G2L["43"] = Instance.new("UIStroke", G2L["40"]);
 G2L["43"]["Transparency"] = 0.5;
 G2L["43"]["Color"] = Color3.fromRGB(35, 35, 45);
 G2L["43"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
 
 
--- StarterGui.Ravion.Main.Helper.Helper.God mode.Toggle.Circle
 G2L["44"] = Instance.new("Frame", G2L["40"]);
 G2L["44"]["BorderSizePixel"] = 0;
 G2L["44"]["BackgroundColor3"] = Color3.fromRGB(31, 33, 43);
@@ -580,12 +585,10 @@ G2L["44"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["44"]["Name"] = [[Circle]];
 
 
--- StarterGui.Ravion.Main.Helper.Helper.God mode.Toggle.Circle.UICorner
 G2L["45"] = Instance.new("UICorner", G2L["44"]);
 G2L["45"]["CornerRadius"] = UDim.new(0.9, 0);
 
 
--- StarterGui.Ravion.Main.Helper.Helper.God mode.TextLabel
 G2L["46"] = Instance.new("TextLabel", G2L["3d"]);
 G2L["46"]["BorderSizePixel"] = 0;
 G2L["46"]["TextSize"] = 14;
@@ -600,7 +603,6 @@ G2L["46"]["Text"] = [[God mode]];
 G2L["46"]["Position"] = UDim2.new(0.04362, 0, 0.24138, 0);
 
 
--- StarterGui.Ravion.Main.Helper.Helper.Esp player
 G2L["47"] = Instance.new("Frame", G2L["3a"]);
 G2L["47"]["BorderSizePixel"] = 0;
 G2L["47"]["BackgroundColor3"] = Color3.fromRGB(27, 27, 35);
@@ -610,18 +612,15 @@ G2L["47"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["47"]["Name"] = [[Esp player]];
 
 
--- StarterGui.Ravion.Main.Helper.Helper.Esp player.UICorner
 G2L["48"] = Instance.new("UICorner", G2L["47"]);
 G2L["48"]["CornerRadius"] = UDim.new(0, 16);
 
 
--- StarterGui.Ravion.Main.Helper.Helper.Esp player.UIStroke
 G2L["49"] = Instance.new("UIStroke", G2L["47"]);
 G2L["49"]["Transparency"] = 0.5;
 G2L["49"]["Color"] = Color3.fromRGB(41, 41, 53);
 
 
--- StarterGui.Ravion.Main.Helper.Helper.Esp player.Toggle
 G2L["4a"] = Instance.new("TextButton", G2L["47"]);
 G2L["4a"]["BorderSizePixel"] = 0;
 G2L["4a"]["TextSize"] = 14;
@@ -636,24 +635,20 @@ G2L["4a"]["Name"] = [[Toggle]];
 G2L["4a"]["Position"] = UDim2.new(0.83219, 0, 0.06897, 0);
 
 
--- StarterGui.Ravion.Main.Helper.Helper.Esp player.Toggle.EspplayerScript
 G2L["4b"] = Instance.new("LocalScript", G2L["4a"]);
 G2L["4b"]["Name"] = [[EspplayerScript]];
 
 
--- StarterGui.Ravion.Main.Helper.Helper.Esp player.Toggle.UICorner
 G2L["4c"] = Instance.new("UICorner", G2L["4a"]);
 G2L["4c"]["CornerRadius"] = UDim.new(0, 16);
 
 
--- StarterGui.Ravion.Main.Helper.Helper.Esp player.Toggle.UIStroke
 G2L["4d"] = Instance.new("UIStroke", G2L["4a"]);
 G2L["4d"]["Transparency"] = 0.5;
 G2L["4d"]["Color"] = Color3.fromRGB(35, 35, 45);
 G2L["4d"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
 
 
--- StarterGui.Ravion.Main.Helper.Helper.Esp player.Toggle.Circle
 G2L["4e"] = Instance.new("Frame", G2L["4a"]);
 G2L["4e"]["BorderSizePixel"] = 0;
 G2L["4e"]["BackgroundColor3"] = Color3.fromRGB(31, 33, 43);
@@ -663,12 +658,10 @@ G2L["4e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["4e"]["Name"] = [[Circle]];
 
 
--- StarterGui.Ravion.Main.Helper.Helper.Esp player.Toggle.Circle.UICorner
 G2L["4f"] = Instance.new("UICorner", G2L["4e"]);
 G2L["4f"]["CornerRadius"] = UDim.new(0.9, 0);
 
 
--- StarterGui.Ravion.Main.Helper.Helper.Esp player.TextLabel
 G2L["50"] = Instance.new("TextLabel", G2L["47"]);
 G2L["50"]["BorderSizePixel"] = 0;
 G2L["50"]["TextSize"] = 14;
@@ -683,7 +676,6 @@ G2L["50"]["Text"] = [[Esp player]];
 G2L["50"]["Position"] = UDim2.new(0.04362, 0, 0.24138, 0);
 
 
--- StarterGui.Ravion.Main.Helper.Helper.Anti Ragdoll
 G2L["a00"] = Instance.new("Frame", G2L["3a"]);
 G2L["a00"]["BorderSizePixel"] = 0;
 G2L["a00"]["BackgroundColor3"] = Color3.fromRGB(27, 27, 35);
@@ -692,18 +684,15 @@ G2L["a00"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["a00"]["Name"] = [[Anti Ragdoll]];
 
 
--- StarterGui.Ravion.Main.Helper.Helper.Anti Ragdoll.UICorner
 G2L["a01"] = Instance.new("UICorner", G2L["a00"]);
 G2L["a01"]["CornerRadius"] = UDim.new(0, 16);
 
 
--- StarterGui.Ravion.Main.Helper.Helper.Anti Ragdoll.UIStroke
 G2L["a02"] = Instance.new("UIStroke", G2L["a00"]);
 G2L["a02"]["Transparency"] = 0.5;
 G2L["a02"]["Color"] = Color3.fromRGB(41, 41, 53);
 
 
--- StarterGui.Ravion.Main.Helper.Helper.Anti Ragdoll.Toggle
 G2L["a03"] = Instance.new("TextButton", G2L["a00"]);
 G2L["a03"]["BorderSizePixel"] = 0;
 G2L["a03"]["TextSize"] = 14;
@@ -718,24 +707,20 @@ G2L["a03"]["Name"] = [[Toggle]];
 G2L["a03"]["Position"] = UDim2.new(0.83219, 0, 0.06897, 0);
 
 
--- StarterGui.Ravion.Main.Helper.Helper.Anti Ragdoll.Toggle.AntiRagdollScript
 G2L["a04"] = Instance.new("LocalScript", G2L["a03"]);
 G2L["a04"]["Name"] = [[AntiRagdollScript]];
 
 
--- StarterGui.Ravion.Main.Helper.Helper.Anti Ragdoll.Toggle.UICorner
 G2L["a05"] = Instance.new("UICorner", G2L["a03"]);
 G2L["a05"]["CornerRadius"] = UDim.new(0, 16);
 
 
--- StarterGui.Ravion.Main.Helper.Helper.Anti Ragdoll.Toggle.UIStroke
 G2L["a06"] = Instance.new("UIStroke", G2L["a03"]);
 G2L["a06"]["Transparency"] = 0.5;
 G2L["a06"]["Color"] = Color3.fromRGB(35, 35, 45);
 G2L["a06"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
 
 
--- StarterGui.Ravion.Main.Helper.Helper.Anti Ragdoll.Toggle.Circle
 G2L["a07"] = Instance.new("Frame", G2L["a03"]);
 G2L["a07"]["BorderSizePixel"] = 0;
 G2L["a07"]["BackgroundColor3"] = Color3.fromRGB(31, 33, 43);
@@ -745,12 +730,10 @@ G2L["a07"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["a07"]["Name"] = [[Circle]];
 
 
--- StarterGui.Ravion.Main.Helper.Helper.Anti Ragdoll.Toggle.Circle.UICorner
 G2L["a08"] = Instance.new("UICorner", G2L["a07"]);
 G2L["a08"]["CornerRadius"] = UDim.new(0.9, 0);
 
 
--- StarterGui.Ravion.Main.Helper.Helper.Anti Ragdoll.TextLabel
 G2L["a09"] = Instance.new("TextLabel", G2L["a00"]);
 G2L["a09"]["BorderSizePixel"] = 0;
 G2L["a09"]["TextSize"] = 14;
@@ -765,7 +748,76 @@ G2L["a09"]["Text"] = [[Anti Ragdoll]];
 G2L["a09"]["Position"] = UDim2.new(0.04362, 0, 0.24138, 0);
 
 
--- StarterGui.Ravion.Main.Helper.Helper.Esp best
+G2L["x00"] = Instance.new("Frame", G2L["3a"]);
+G2L["x00"]["BorderSizePixel"] = 0;
+G2L["x00"]["BackgroundColor3"] = Color3.fromRGB(27, 27, 35);
+G2L["x00"]["Size"] = UDim2.new(0, 292, 0, 29);
+G2L["x00"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["x00"]["Name"] = [[X-Ray]];
+
+
+G2L["x01"] = Instance.new("UICorner", G2L["x00"]);
+G2L["x01"]["CornerRadius"] = UDim.new(0, 16);
+
+
+G2L["x02"] = Instance.new("UIStroke", G2L["x00"]);
+G2L["x02"]["Transparency"] = 0.5;
+G2L["x02"]["Color"] = Color3.fromRGB(41, 41, 53);
+
+
+G2L["x03"] = Instance.new("TextButton", G2L["x00"]);
+G2L["x03"]["BorderSizePixel"] = 0;
+G2L["x03"]["TextSize"] = 14;
+G2L["x03"]["AutoButtonColor"] = false;
+G2L["x03"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["x03"]["BackgroundColor3"] = Color3.fromRGB(19, 19, 25);
+G2L["x03"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["x03"]["Size"] = UDim2.new(0, 43, 0, 25);
+G2L["x03"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["x03"]["Text"] = [[]];
+G2L["x03"]["Name"] = [[Toggle]];
+G2L["x03"]["Position"] = UDim2.new(0.83219, 0, 0.06897, 0);
+
+
+G2L["x04"] = Instance.new("LocalScript", G2L["x03"]);
+G2L["x04"]["Name"] = [[XRayScript]];
+
+
+G2L["x05"] = Instance.new("UICorner", G2L["x03"]);
+G2L["x05"]["CornerRadius"] = UDim.new(0, 16);
+
+
+G2L["x06"] = Instance.new("UIStroke", G2L["x03"]);
+G2L["x06"]["Transparency"] = 0.5;
+G2L["x06"]["Color"] = Color3.fromRGB(35, 35, 45);
+G2L["x06"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+
+
+G2L["x07"] = Instance.new("Frame", G2L["x03"]);
+G2L["x07"]["BorderSizePixel"] = 0;
+G2L["x07"]["BackgroundColor3"] = Color3.fromRGB(31, 33, 43);
+G2L["x07"]["Size"] = UDim2.new(0, 15, 0, 15);
+G2L["x07"]["Position"] = UDim2.new(0.15, 0, 0.2, 0);
+G2L["x07"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["x07"]["Name"] = [[Circle]];
+
+
+G2L["x08"] = Instance.new("UICorner", G2L["x07"]);
+G2L["x08"]["CornerRadius"] = UDim.new(0.9, 0);
+
+
+G2L["x09"] = Instance.new("TextLabel", G2L["x00"]);
+G2L["x09"]["BorderSizePixel"] = 0;
+G2L["x09"]["TextSize"] = 14;
+G2L["x09"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["x09"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["x09"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Medium, Enum.FontStyle.Normal);
+G2L["x09"]["TextColor3"] = Color3.fromRGB(213, 213, 213);
+G2L["x09"]["BackgroundTransparency"] = 1;
+G2L["x09"]["Size"] = UDim2.new(0, 155, 0, 15);
+G2L["x09"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["x09"]["Text"] = [[X-Ray]];
+G2L["x09"]["Position"] = UDim2.new(0.04362, 0, 0.24138, 0);
 G2L["51"] = Instance.new("Frame", G2L["3a"]);
 G2L["51"]["BorderSizePixel"] = 0;
 G2L["51"]["BackgroundColor3"] = Color3.fromRGB(27, 27, 35);
@@ -775,18 +827,15 @@ G2L["51"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["51"]["Name"] = [[Esp best]];
 
 
--- StarterGui.Ravion.Main.Helper.Helper.Esp best.UICorner
 G2L["52"] = Instance.new("UICorner", G2L["51"]);
 G2L["52"]["CornerRadius"] = UDim.new(0, 16);
 
 
--- StarterGui.Ravion.Main.Helper.Helper.Esp best.UIStroke
 G2L["53"] = Instance.new("UIStroke", G2L["51"]);
 G2L["53"]["Transparency"] = 0.5;
 G2L["53"]["Color"] = Color3.fromRGB(41, 41, 53);
 
 
--- StarterGui.Ravion.Main.Helper.Helper.Esp best.Toggle
 G2L["54"] = Instance.new("TextButton", G2L["51"]);
 G2L["54"]["BorderSizePixel"] = 0;
 G2L["54"]["TextSize"] = 14;
@@ -801,24 +850,20 @@ G2L["54"]["Name"] = [[Toggle]];
 G2L["54"]["Position"] = UDim2.new(0.83219, 0, 0.06897, 0);
 
 
--- StarterGui.Ravion.Main.Helper.Helper.Esp best.Toggle.EspbestScript
 G2L["55"] = Instance.new("LocalScript", G2L["54"]);
 G2L["55"]["Name"] = [[EspbestScript]];
 
 
--- StarterGui.Ravion.Main.Helper.Helper.Esp best.Toggle.UICorner
 G2L["56"] = Instance.new("UICorner", G2L["54"]);
 G2L["56"]["CornerRadius"] = UDim.new(0, 16);
 
 
--- StarterGui.Ravion.Main.Helper.Helper.Esp best.Toggle.UIStroke
 G2L["57"] = Instance.new("UIStroke", G2L["54"]);
 G2L["57"]["Transparency"] = 0.5;
 G2L["57"]["Color"] = Color3.fromRGB(35, 35, 45);
 G2L["57"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
 
 
--- StarterGui.Ravion.Main.Helper.Helper.Esp best.Toggle.Circle
 G2L["58"] = Instance.new("Frame", G2L["54"]);
 G2L["58"]["BorderSizePixel"] = 0;
 G2L["58"]["BackgroundColor3"] = Color3.fromRGB(31, 33, 43);
@@ -828,12 +873,10 @@ G2L["58"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["58"]["Name"] = [[Circle]];
 
 
--- StarterGui.Ravion.Main.Helper.Helper.Esp best.Toggle.Circle.UICorner
 G2L["59"] = Instance.new("UICorner", G2L["58"]);
 G2L["59"]["CornerRadius"] = UDim.new(0.9, 0);
 
 
--- StarterGui.Ravion.Main.Helper.Helper.Esp best.TextLabel
 G2L["5a"] = Instance.new("TextLabel", G2L["51"]);
 G2L["5a"]["BorderSizePixel"] = 0;
 G2L["5a"]["TextSize"] = 14;
@@ -848,7 +891,6 @@ G2L["5a"]["Text"] = [[Esp highest value]];
 G2L["5a"]["Position"] = UDim2.new(0.04362, 0, 0.24138, 0);
 
 
--- StarterGui.Ravion.Main.Helper.Helper.Esp time
 G2L["65"] = Instance.new("Frame", G2L["3a"]);
 G2L["65"]["BorderSizePixel"] = 0;
 G2L["65"]["BackgroundColor3"] = Color3.fromRGB(27, 27, 35);
@@ -858,7 +900,6 @@ G2L["65"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["65"]["Name"] = [[Esp time]];
 
 
--- StarterGui.Ravion.Main.Helper.Helper.Esp time.Toggle
 G2L["66"] = Instance.new("TextButton", G2L["65"]);
 G2L["66"]["BorderSizePixel"] = 0;
 G2L["66"]["TextSize"] = 14;
@@ -873,12 +914,10 @@ G2L["66"]["Name"] = [[Toggle]];
 G2L["66"]["Position"] = UDim2.new(0.83219, 0, 0.06897, 0);
 
 
--- StarterGui.Ravion.Main.Helper.Helper.Esp time.Toggle.Script
 G2L["67"] = Instance.new("LocalScript", G2L["66"]);
 G2L["67"]["Name"] = [[Script]];
 
 
--- StarterGui.Ravion.Main.Helper.Helper.Esp time.Toggle.Circle
 G2L["68"] = Instance.new("Frame", G2L["66"]);
 G2L["68"]["BorderSizePixel"] = 0;
 G2L["68"]["BackgroundColor3"] = Color3.fromRGB(31, 33, 43);
@@ -888,24 +927,20 @@ G2L["68"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["68"]["Name"] = [[Circle]];
 
 
--- StarterGui.Ravion.Main.Helper.Helper.Esp time.Toggle.Circle.UICorner
 G2L["69"] = Instance.new("UICorner", G2L["68"]);
 G2L["69"]["CornerRadius"] = UDim.new(0.9, 0);
 
 
--- StarterGui.Ravion.Main.Helper.Helper.Esp time.Toggle.UIStroke
 G2L["6a"] = Instance.new("UIStroke", G2L["66"]);
 G2L["6a"]["Transparency"] = 0.5;
 G2L["6a"]["Color"] = Color3.fromRGB(35, 35, 45);
 G2L["6a"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
 
 
--- StarterGui.Ravion.Main.Helper.Helper.Esp time.Toggle.UICorner
 G2L["6b"] = Instance.new("UICorner", G2L["66"]);
 G2L["6b"]["CornerRadius"] = UDim.new(0, 16);
 
 
--- StarterGui.Ravion.Main.Helper.Helper.Esp time.TextLabel
 G2L["6c"] = Instance.new("TextLabel", G2L["65"]);
 G2L["6c"]["BorderSizePixel"] = 0;
 G2L["6c"]["TextSize"] = 14;
@@ -920,18 +955,15 @@ G2L["6c"]["Text"] = [[Esp base time]];
 G2L["6c"]["Position"] = UDim2.new(0.04362, 0, 0.24138, 0);
 
 
--- StarterGui.Ravion.Main.Helper.Helper.Esp time.UIStroke
 G2L["6d"] = Instance.new("UIStroke", G2L["65"]);
 G2L["6d"]["Transparency"] = 0.5;
 G2L["6d"]["Color"] = Color3.fromRGB(41, 41, 53);
 
 
--- StarterGui.Ravion.Main.Helper.Helper.Esp time.UICorner
 G2L["6e"] = Instance.new("UICorner", G2L["65"]);
 G2L["6e"]["CornerRadius"] = UDim.new(0, 16);
 
 
--- StarterGui.Ravion.Main.Helper.Helper.Esp name
 G2L["6f"] = Instance.new("Frame", G2L["3a"]);
 G2L["6f"]["BorderSizePixel"] = 0;
 G2L["6f"]["BackgroundColor3"] = Color3.fromRGB(27, 27, 35);
@@ -941,7 +973,6 @@ G2L["6f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["6f"]["Name"] = [[Esp name]];
 
 
--- StarterGui.Ravion.Main.Helper.Helper.Esp name.Toggle
 G2L["70"] = Instance.new("TextButton", G2L["6f"]);
 G2L["70"]["BorderSizePixel"] = 0;
 G2L["70"]["TextSize"] = 14;
@@ -956,12 +987,10 @@ G2L["70"]["Name"] = [[Toggle]];
 G2L["70"]["Position"] = UDim2.new(0.83219, 0, 0.06897, 0);
 
 
--- StarterGui.Ravion.Main.Helper.Helper.Esp name.Toggle.EspNameScript
 G2L["71"] = Instance.new("LocalScript", G2L["70"]);
 G2L["71"]["Name"] = [[EspNameScript]];
 
 
--- StarterGui.Ravion.Main.Helper.Helper.Esp name.Toggle.Circle
 G2L["72"] = Instance.new("Frame", G2L["70"]);
 G2L["72"]["BorderSizePixel"] = 0;
 G2L["72"]["BackgroundColor3"] = Color3.fromRGB(31, 33, 43);
@@ -971,24 +1000,20 @@ G2L["72"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["72"]["Name"] = [[Circle]];
 
 
--- StarterGui.Ravion.Main.Helper.Helper.Esp name.Toggle.Circle.UICorner
 G2L["73"] = Instance.new("UICorner", G2L["72"]);
 G2L["73"]["CornerRadius"] = UDim.new(0.9, 0);
 
 
--- StarterGui.Ravion.Main.Helper.Helper.Esp name.Toggle.UIStroke
 G2L["74"] = Instance.new("UIStroke", G2L["70"]);
 G2L["74"]["Transparency"] = 0.5;
 G2L["74"]["Color"] = Color3.fromRGB(35, 35, 45);
 G2L["74"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
 
 
--- StarterGui.Ravion.Main.Helper.Helper.Esp name.Toggle.UICorner
 G2L["75"] = Instance.new("UICorner", G2L["70"]);
 G2L["75"]["CornerRadius"] = UDim.new(0, 16);
 
 
--- StarterGui.Ravion.Main.Helper.Helper.Esp name.TextLabel
 G2L["76"] = Instance.new("TextLabel", G2L["6f"]);
 G2L["76"]["BorderSizePixel"] = 0;
 G2L["76"]["TextSize"] = 14;
@@ -1003,18 +1028,15 @@ G2L["76"]["Text"] = [[Esp name]];
 G2L["76"]["Position"] = UDim2.new(0.04362, 0, 0.24138, 0);
 
 
--- StarterGui.Ravion.Main.Helper.Helper.Esp name.UIStroke
 G2L["77"] = Instance.new("UIStroke", G2L["6f"]);
 G2L["77"]["Transparency"] = 0.5;
 G2L["77"]["Color"] = Color3.fromRGB(41, 41, 53);
 
 
--- StarterGui.Ravion.Main.Helper.Helper.Esp name.UICorner
 G2L["78"] = Instance.new("UICorner", G2L["6f"]);
 G2L["78"]["CornerRadius"] = UDim.new(0, 16);
 
 
--- StarterGui.Ravion.Main.Helper.Helper.Anti afk
 G2L["79"] = Instance.new("Frame", G2L["3a"]);
 G2L["79"]["BorderSizePixel"] = 0;
 G2L["79"]["BackgroundColor3"] = Color3.fromRGB(27, 27, 35);
@@ -1024,7 +1046,6 @@ G2L["79"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["79"]["Name"] = [[Anti afk]];
 
 
--- StarterGui.Ravion.Main.Helper.Helper.Anti afk.Toggle
 G2L["7a"] = Instance.new("TextButton", G2L["79"]);
 G2L["7a"]["BorderSizePixel"] = 0;
 G2L["7a"]["TextSize"] = 14;
@@ -1039,12 +1060,10 @@ G2L["7a"]["Name"] = [[Toggle]];
 G2L["7a"]["Position"] = UDim2.new(0.83219, 0, 0.06897, 0);
 
 
--- StarterGui.Ravion.Main.Helper.Helper.Anti afk.Toggle.AntiAfkScript
 G2L["7b"] = Instance.new("LocalScript", G2L["7a"]);
 G2L["7b"]["Name"] = [[AntiAfkScript]];
 
 
--- StarterGui.Ravion.Main.Helper.Helper.Anti afk.Toggle.Circle
 G2L["7c"] = Instance.new("Frame", G2L["7a"]);
 G2L["7c"]["BorderSizePixel"] = 0;
 G2L["7c"]["BackgroundColor3"] = Color3.fromRGB(31, 33, 43);
@@ -1054,24 +1073,20 @@ G2L["7c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["7c"]["Name"] = [[Circle]];
 
 
--- StarterGui.Ravion.Main.Helper.Helper.Anti afk.Toggle.Circle.UICorner
 G2L["7d"] = Instance.new("UICorner", G2L["7c"]);
 G2L["7d"]["CornerRadius"] = UDim.new(0.9, 0);
 
 
--- StarterGui.Ravion.Main.Helper.Helper.Anti afk.Toggle.UIStroke
 G2L["7e"] = Instance.new("UIStroke", G2L["7a"]);
 G2L["7e"]["Transparency"] = 0.5;
 G2L["7e"]["Color"] = Color3.fromRGB(35, 35, 45);
 G2L["7e"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
 
 
--- StarterGui.Ravion.Main.Helper.Helper.Anti afk.Toggle.UICorner
 G2L["7f"] = Instance.new("UICorner", G2L["7a"]);
 G2L["7f"]["CornerRadius"] = UDim.new(0, 16);
 
 
--- StarterGui.Ravion.Main.Helper.Helper.Anti afk.TextLabel
 G2L["80"] = Instance.new("TextLabel", G2L["79"]);
 G2L["80"]["BorderSizePixel"] = 0;
 G2L["80"]["TextSize"] = 14;
@@ -1086,18 +1101,15 @@ G2L["80"]["Text"] = [[Anti afk]];
 G2L["80"]["Position"] = UDim2.new(0.04362, 0, 0.24138, 0);
 
 
--- StarterGui.Ravion.Main.Helper.Helper.Anti afk.UIStroke
 G2L["81"] = Instance.new("UIStroke", G2L["79"]);
 G2L["81"]["Transparency"] = 0.5;
 G2L["81"]["Color"] = Color3.fromRGB(41, 41, 53);
 
 
--- StarterGui.Ravion.Main.Helper.Helper.Anti afk.UICorner
 G2L["82"] = Instance.new("UICorner", G2L["79"]);
 G2L["82"]["CornerRadius"] = UDim.new(0, 16);
 
 
--- StarterGui.Ravion.Main.Helper.Helper.Speed
 G2L["83"] = Instance.new("Frame", G2L["3a"]);
 G2L["83"]["BorderSizePixel"] = 0;
 G2L["83"]["BackgroundColor3"] = Color3.fromRGB(27, 27, 35);
@@ -1107,7 +1119,6 @@ G2L["83"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["83"]["Name"] = [[Speed]];
 
 
--- StarterGui.Ravion.Main.Helper.Helper.Speed.Toggle
 G2L["84"] = Instance.new("TextButton", G2L["83"]);
 G2L["84"]["BorderSizePixel"] = 0;
 G2L["84"]["TextSize"] = 14;
@@ -1122,12 +1133,10 @@ G2L["84"]["Name"] = [[Toggle]];
 G2L["84"]["Position"] = UDim2.new(0.83219, 0, 0.06897, 0);
 
 
--- StarterGui.Ravion.Main.Helper.Helper.Speed.Toggle.GrappleOpenScript
 G2L["85"] = Instance.new("LocalScript", G2L["84"]);
 G2L["85"]["Name"] = [[GrappleOpenScript]];
 
 
--- StarterGui.Ravion.Main.Helper.Helper.Speed.Toggle.Circle
 G2L["86"] = Instance.new("Frame", G2L["84"]);
 G2L["86"]["BorderSizePixel"] = 0;
 G2L["86"]["BackgroundColor3"] = Color3.fromRGB(31, 33, 43);
@@ -1137,24 +1146,20 @@ G2L["86"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["86"]["Name"] = [[Circle]];
 
 
--- StarterGui.Ravion.Main.Helper.Helper.Speed.Toggle.Circle.UICorner
 G2L["87"] = Instance.new("UICorner", G2L["86"]);
 G2L["87"]["CornerRadius"] = UDim.new(0.9, 0);
 
 
--- StarterGui.Ravion.Main.Helper.Helper.Speed.Toggle.UIStroke
 G2L["88"] = Instance.new("UIStroke", G2L["84"]);
 G2L["88"]["Transparency"] = 0.5;
 G2L["88"]["Color"] = Color3.fromRGB(35, 35, 45);
 G2L["88"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
 
 
--- StarterGui.Ravion.Main.Helper.Helper.Speed.Toggle.UICorner
 G2L["89"] = Instance.new("UICorner", G2L["84"]);
 G2L["89"]["CornerRadius"] = UDim.new(0, 16);
 
 
--- StarterGui.Ravion.Main.Helper.Helper.Speed.TextLabel
 G2L["8a"] = Instance.new("TextLabel", G2L["83"]);
 G2L["8a"]["BorderSizePixel"] = 0;
 G2L["8a"]["TextSize"] = 14;
@@ -1169,18 +1174,15 @@ G2L["8a"]["Text"] = [[Speed grapple]];
 G2L["8a"]["Position"] = UDim2.new(0.04362, 0, 0.24138, 0);
 
 
--- StarterGui.Ravion.Main.Helper.Helper.Speed.UIStroke
 G2L["8b"] = Instance.new("UIStroke", G2L["83"]);
 G2L["8b"]["Transparency"] = 0.5;
 G2L["8b"]["Color"] = Color3.fromRGB(41, 41, 53);
 
 
--- StarterGui.Ravion.Main.Helper.Helper.Speed.UICorner
 G2L["8c"] = Instance.new("UICorner", G2L["83"]);
 G2L["8c"]["CornerRadius"] = UDim.new(0, 16);
 
 
--- StarterGui.Ravion.Main.Server
 G2L["8d"] = Instance.new("Frame", G2L["2"]);
 G2L["8d"]["Visible"] = false;
 G2L["8d"]["BorderSizePixel"] = 0;
@@ -1192,18 +1194,15 @@ G2L["8d"]["Name"] = [[Server]];
 G2L["8d"]["BackgroundTransparency"] = 1;
 
 
--- StarterGui.Ravion.Main.Server.UICorner
 G2L["8e"] = Instance.new("UICorner", G2L["8d"]);
 G2L["8e"]["CornerRadius"] = UDim.new(0, 16);
 
 
--- StarterGui.Ravion.Main.Server.UIStroke
 G2L["8f"] = Instance.new("UIStroke", G2L["8d"]);
 G2L["8f"]["Transparency"] = 0.5;
 G2L["8f"]["Color"] = Color3.fromRGB(41, 41, 53);
 
 
--- StarterGui.Ravion.Main.Server.Server
 G2L["90"] = Instance.new("ScrollingFrame", G2L["8d"]);
 G2L["90"]["Active"] = true;
 G2L["90"]["ScrollingDirection"] = Enum.ScrollingDirection.Y;
@@ -1221,19 +1220,16 @@ G2L["90"]["ScrollBarThickness"] = 0;
 G2L["90"]["BackgroundTransparency"] = 1;
 
 
--- StarterGui.Ravion.Main.Server.Server.UICorner
 G2L["91"] = Instance.new("UICorner", G2L["90"]);
 G2L["91"]["CornerRadius"] = UDim.new(0, 16);
 
 
--- StarterGui.Ravion.Main.Server.Server.UIListLayout
 G2L["92"] = Instance.new("UIListLayout", G2L["90"]);
 G2L["92"]["HorizontalAlignment"] = Enum.HorizontalAlignment.Center;
 G2L["92"]["Padding"] = UDim.new(0, 6);
 G2L["92"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
 
 
--- StarterGui.Ravion.Main.Server.Server.Rejoin Server
 G2L["93"] = Instance.new("TextButton", G2L["90"]);
 G2L["93"]["BorderSizePixel"] = 0;
 G2L["93"]["TextSize"] = 12;
@@ -1247,24 +1243,20 @@ G2L["93"]["Text"] = [[Rejoin Server]];
 G2L["93"]["Name"] = [[Rejoin Server]];
 
 
--- StarterGui.Ravion.Main.Server.Server.Rejoin Server.RejoinServerButton
 G2L["94"] = Instance.new("LocalScript", G2L["93"]);
 G2L["94"]["Name"] = [[RejoinServerButton]];
 
 
--- StarterGui.Ravion.Main.Server.Server.Rejoin Server.UICorner
 G2L["95"] = Instance.new("UICorner", G2L["93"]);
 G2L["95"]["CornerRadius"] = UDim.new(0, 16);
 
 
--- StarterGui.Ravion.Main.Server.Server.Rejoin Server.UIStroke
 G2L["96"] = Instance.new("UIStroke", G2L["93"]);
 G2L["96"]["Transparency"] = 0.5;
 G2L["96"]["Color"] = Color3.fromRGB(41, 41, 53);
 G2L["96"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
 
 
--- StarterGui.Ravion.Main.Server.Server.Antilag
 G2L["97"] = Instance.new("TextButton", G2L["90"]);
 G2L["97"]["RichText"] = true;
 G2L["97"]["BorderSizePixel"] = 0;
@@ -1279,24 +1271,20 @@ G2L["97"]["Text"] = [[Anti Lag]];
 G2L["97"]["Name"] = [[Antilag]];
 
 
--- StarterGui.Ravion.Main.Server.Server.Antilag.AntiLagScript
 G2L["98"] = Instance.new("LocalScript", G2L["97"]);
 G2L["98"]["Name"] = [[AntiLagScript]];
 
 
--- StarterGui.Ravion.Main.Server.Server.Antilag.UICorner
 G2L["99"] = Instance.new("UICorner", G2L["97"]);
 G2L["99"]["CornerRadius"] = UDim.new(0, 16);
 
 
--- StarterGui.Ravion.Main.Server.Server.Antilag.UIStroke
 G2L["9a"] = Instance.new("UIStroke", G2L["97"]);
 G2L["9a"]["Transparency"] = 0.5;
 G2L["9a"]["Color"] = Color3.fromRGB(41, 41, 53);
 G2L["9a"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
 
 
--- StarterGui.Ravion.Main.Server.Server.Join by JobID
 G2L["9b1"] = Instance.new("Frame", G2L["90"]);
 G2L["9b1"]["BorderSizePixel"] = 0;
 G2L["9b1"]["BackgroundColor3"] = Color3.fromRGB(27, 27, 35);
@@ -1305,19 +1293,16 @@ G2L["9b1"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["9b1"]["Name"] = [[Join by JobID]];
 
 
--- StarterGui.Ravion.Main.Server.Server.Join by JobID.UICorner
 G2L["9b2"] = Instance.new("UICorner", G2L["9b1"]);
 G2L["9b2"]["CornerRadius"] = UDim.new(0, 16);
 
 
--- StarterGui.Ravion.Main.Server.Server.Join by JobID.UIStroke
 G2L["9b3"] = Instance.new("UIStroke", G2L["9b1"]);
 G2L["9b3"]["Transparency"] = 0.5;
 G2L["9b3"]["Color"] = Color3.fromRGB(41, 41, 53);
 G2L["9b3"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
 
 
--- StarterGui.Ravion.Main.Server.Server.Join by JobID.TextBox
 G2L["9b4"] = Instance.new("TextBox", G2L["9b1"]);
 G2L["9b4"]["BorderSizePixel"] = 0;
 G2L["9b4"]["TextSize"] = 12;
@@ -1330,12 +1315,10 @@ G2L["9b4"]["Position"] = UDim2.new(0.02055, 0, 0.06897, 0);
 G2L["9b4"]["PlaceholderText"] = [[Enter JobID...]];
 
 
--- StarterGui.Ravion.Main.Server.Server.Join by JobID.TextBox.UICorner
 G2L["9b5"] = Instance.new("UICorner", G2L["9b4"]);
 G2L["9b5"]["CornerRadius"] = UDim.new(0, 10);
 
 
--- StarterGui.Ravion.Main.Server.Server.Join by JobID.JoinButton
 G2L["9b6"] = Instance.new("TextButton", G2L["9b1"]);
 G2L["9b6"]["BorderSizePixel"] = 0;
 G2L["9b6"]["TextSize"] = 12;
@@ -1349,17 +1332,41 @@ G2L["9b6"]["Name"] = [[JoinButton]];
 G2L["9b6"]["Position"] = UDim2.new(0.71233, 0, 0.06897, 0);
 
 
--- StarterGui.Ravion.Main.Server.Server.Join by JobID.JoinButton.UICorner
 G2L["9b7"] = Instance.new("UICorner", G2L["9b6"]);
 G2L["9b7"]["CornerRadius"] = UDim.new(0, 10);
 
 
--- StarterGui.Ravion.Main.Server.Server.Join by JobID.JoinButton.JoinByJobIDScript
 G2L["9b8"] = Instance.new("LocalScript", G2L["9b6"]);
 G2L["9b8"]["Name"] = [[JoinByJobIDScript]];
 
 
--- StarterGui.Ravion.Main.Server.Server.Copy JobID
+G2L["9c0"] = Instance.new("TextButton", G2L["90"]);
+G2L["9c0"]["BorderSizePixel"] = 0;
+G2L["9c0"]["TextSize"] = 12;
+G2L["9c0"]["AutoButtonColor"] = false;
+G2L["9c0"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["9c0"]["BackgroundColor3"] = Color3.fromRGB(27, 27, 35);
+G2L["9c0"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Medium, Enum.FontStyle.Normal);
+G2L["9c0"]["Size"] = UDim2.new(0, 292, 0, 29);
+G2L["9c0"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["9c0"]["Text"] = [[Server Hop]];
+G2L["9c0"]["Name"] = [[Server Hop]];
+
+
+G2L["9c01"] = Instance.new("UICorner", G2L["9c0"]);
+G2L["9c01"]["CornerRadius"] = UDim.new(0, 16);
+
+
+G2L["9c02"] = Instance.new("UIStroke", G2L["9c0"]);
+G2L["9c02"]["Transparency"] = 0.5;
+G2L["9c02"]["Color"] = Color3.fromRGB(41, 41, 53);
+G2L["9c02"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+
+
+G2L["9c03"] = Instance.new("LocalScript", G2L["9c0"]);
+G2L["9c03"]["Name"] = [[ServerHopScript]];
+
+
 G2L["9c1"] = Instance.new("TextButton", G2L["90"]);
 G2L["9c1"]["BorderSizePixel"] = 0;
 G2L["9c1"]["TextSize"] = 12;
@@ -1373,24 +1380,20 @@ G2L["9c1"]["Text"] = [[Copy JobID]];
 G2L["9c1"]["Name"] = [[Copy JobID]];
 
 
--- StarterGui.Ravion.Main.Server.Server.Copy JobID.UICorner
 G2L["9c2"] = Instance.new("UICorner", G2L["9c1"]);
 G2L["9c2"]["CornerRadius"] = UDim.new(0, 16);
 
 
--- StarterGui.Ravion.Main.Server.Server.Copy JobID.UIStroke
 G2L["9c3"] = Instance.new("UIStroke", G2L["9c1"]);
 G2L["9c3"]["Transparency"] = 0.5;
 G2L["9c3"]["Color"] = Color3.fromRGB(41, 41, 53);
 G2L["9c3"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
 
 
--- StarterGui.Ravion.Main.Server.Server.Copy JobID.CopyJobIDScript
 G2L["9c4"] = Instance.new("LocalScript", G2L["9c1"]);
 G2L["9c4"]["Name"] = [[CopyJobIDScript]];
 
 
--- StarterGui.Ravion.Main.Setting
 G2L["9d1"] = Instance.new("Frame", G2L["2"]);
 G2L["9d1"]["Visible"] = false;
 G2L["9d1"]["BorderSizePixel"] = 0;
@@ -1402,18 +1405,15 @@ G2L["9d1"]["Name"] = [[Setting]];
 G2L["9d1"]["BackgroundTransparency"] = 1;
 
 
--- StarterGui.Ravion.Main.Setting.UICorner
 G2L["9d2"] = Instance.new("UICorner", G2L["9d1"]);
 G2L["9d2"]["CornerRadius"] = UDim.new(0, 16);
 
 
--- StarterGui.Ravion.Main.Setting.UIStroke
 G2L["9d3"] = Instance.new("UIStroke", G2L["9d1"]);
 G2L["9d3"]["Transparency"] = 0.5;
 G2L["9d3"]["Color"] = Color3.fromRGB(41, 41, 53);
 
 
--- StarterGui.Ravion.Main.Setting.Setting
 G2L["9d4"] = Instance.new("ScrollingFrame", G2L["9d1"]);
 G2L["9d4"]["Active"] = true;
 G2L["9d4"]["ScrollingDirection"] = Enum.ScrollingDirection.Y;
@@ -1431,23 +1431,90 @@ G2L["9d4"]["ScrollBarThickness"] = 0;
 G2L["9d4"]["BackgroundTransparency"] = 1;
 
 
--- StarterGui.Ravion.Main.Setting.Setting.UICorner
 G2L["9d5"] = Instance.new("UICorner", G2L["9d4"]);
 G2L["9d5"]["CornerRadius"] = UDim.new(0, 16);
 
 
--- StarterGui.Ravion.Main.Setting.Setting.UIListLayout
 G2L["9d6"] = Instance.new("UIListLayout", G2L["9d4"]);
 G2L["9d6"]["HorizontalAlignment"] = Enum.HorizontalAlignment.Center;
 G2L["9d6"]["Padding"] = UDim.new(0, 6);
 G2L["9d6"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
 
 
+G2L["9d7"] = Instance.new("Frame", G2L["9d4"]);
+G2L["9d7"]["BorderSizePixel"] = 0;
+G2L["9d7"]["BackgroundColor3"] = Color3.fromRGB(27, 27, 35);
+G2L["9d7"]["Size"] = UDim2.new(0, 292, 0, 29);
+G2L["9d7"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["9d7"]["Name"] = [[Notifications]];
+
+
+G2L["9d8"] = Instance.new("UICorner", G2L["9d7"]);
+G2L["9d8"]["CornerRadius"] = UDim.new(0, 16);
+
+
+G2L["9d9"] = Instance.new("UIStroke", G2L["9d7"]);
+G2L["9d9"]["Transparency"] = 0.5;
+G2L["9d9"]["Color"] = Color3.fromRGB(41, 41, 53);
+
+
+G2L["9da"] = Instance.new("TextButton", G2L["9d7"]);
+G2L["9da"]["BorderSizePixel"] = 0;
+G2L["9da"]["TextSize"] = 14;
+G2L["9da"]["AutoButtonColor"] = false;
+G2L["9da"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["9da"]["BackgroundColor3"] = Color3.fromRGB(19, 19, 25);
+G2L["9da"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["9da"]["Size"] = UDim2.new(0, 43, 0, 25);
+G2L["9da"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["9da"]["Text"] = [[]];
+G2L["9da"]["Name"] = [[Toggle]];
+G2L["9da"]["Position"] = UDim2.new(0.83219, 0, 0.06897, 0);
+
+
+G2L["9db"] = Instance.new("LocalScript", G2L["9da"]);
+G2L["9db"]["Name"] = [[NotificationToggleScript]];
+
+
+G2L["9dc"] = Instance.new("UICorner", G2L["9da"]);
+G2L["9dc"]["CornerRadius"] = UDim.new(0, 16);
+
+
+G2L["9dd"] = Instance.new("UIStroke", G2L["9da"]);
+G2L["9dd"]["Transparency"] = 0.5;
+G2L["9dd"]["Color"] = Color3.fromRGB(35, 35, 45);
+G2L["9dd"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+
+
+G2L["9de"] = Instance.new("Frame", G2L["9da"]);
+G2L["9de"]["BorderSizePixel"] = 0;
+G2L["9de"]["BackgroundColor3"] = Color3.fromRGB(197, 48, 2);
+G2L["9de"]["Size"] = UDim2.new(0, 15, 0, 15);
+G2L["9de"]["Position"] = UDim2.new(0.55, 0, 0.2, 0);
+G2L["9de"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["9de"]["Name"] = [[Circle]];
+
+
+G2L["9df"] = Instance.new("UICorner", G2L["9de"]);
+G2L["9df"]["CornerRadius"] = UDim.new(0.9, 0);
+
+
+G2L["9e0"] = Instance.new("TextLabel", G2L["9d7"]);
+G2L["9e0"]["BorderSizePixel"] = 0;
+G2L["9e0"]["TextSize"] = 14;
+G2L["9e0"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["9e0"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["9e0"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Medium, Enum.FontStyle.Normal);
+G2L["9e0"]["TextColor3"] = Color3.fromRGB(213, 213, 213);
+G2L["9e0"]["BackgroundTransparency"] = 1;
+G2L["9e0"]["Size"] = UDim2.new(0, 155, 0, 15);
+G2L["9e0"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["9e0"]["Text"] = [[Notifications]];
+G2L["9e0"]["Position"] = UDim2.new(0.04362, 0, 0.24138, 0);
 
 
 
 
--- StarterGui.Ravion.Main.Setting.Setting.Transparency
 G2L["9eb"] = Instance.new("Frame", G2L["9d4"]);
 G2L["9eb"]["BorderSizePixel"] = 0;
 G2L["9eb"]["BackgroundColor3"] = Color3.fromRGB(27, 27, 35);
@@ -1456,18 +1523,15 @@ G2L["9eb"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["9eb"]["Name"] = [[Transparency]];
 
 
--- StarterGui.Ravion.Main.Setting.Setting.Transparency.UICorner
 G2L["9ec"] = Instance.new("UICorner", G2L["9eb"]);
 G2L["9ec"]["CornerRadius"] = UDim.new(0, 16);
 
 
--- StarterGui.Ravion.Main.Setting.Setting.Transparency.UIStroke
 G2L["9ed"] = Instance.new("UIStroke", G2L["9eb"]);
 G2L["9ed"]["Transparency"] = 0.5;
 G2L["9ed"]["Color"] = Color3.fromRGB(41, 41, 53);
 
 
--- StarterGui.Ravion.Main.Setting.Setting.Transparency.TextLabel
 G2L["9ee"] = Instance.new("TextLabel", G2L["9eb"]);
 G2L["9ee"]["BorderSizePixel"] = 0;
 G2L["9ee"]["TextSize"] = 14;
@@ -1482,7 +1546,6 @@ G2L["9ee"]["Text"] = [[Transparency]];
 G2L["9ee"]["Position"] = UDim2.new(0.04362, 0, 0.24138, 0);
 
 
--- StarterGui.Ravion.Main.Setting.Setting.Transparency.TransparencySlider
 G2L["9ef"] = Instance.new("Frame", G2L["9eb"]);
 G2L["9ef"]["BorderSizePixel"] = 0;
 G2L["9ef"]["BackgroundColor3"] = Color3.fromRGB(19, 19, 25);
@@ -1492,12 +1555,10 @@ G2L["9ef"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["9ef"]["Name"] = [[TransparencySlider]];
 
 
--- StarterGui.Ravion.Main.Setting.Setting.Transparency.TransparencySlider.UICorner
 G2L["9f0"] = Instance.new("UICorner", G2L["9ef"]);
 G2L["9f0"]["CornerRadius"] = UDim.new(0, 10);
 
 
--- StarterGui.Ravion.Main.Setting.Setting.Transparency.TransparencySlider.Slider
 G2L["9f1"] = Instance.new("TextButton", G2L["9ef"]);
 G2L["9f1"]["BorderSizePixel"] = 0;
 G2L["9f1"]["TextSize"] = 14;
@@ -1511,24 +1572,79 @@ G2L["9f1"]["Name"] = [[Slider]];
 G2L["9f1"]["Position"] = UDim2.new(0, 0, 0, 0);
 
 
--- StarterGui.Ravion.Main.Setting.Setting.Transparency.TransparencySlider.Slider.TransparencySliderScript
 G2L["9f2"] = Instance.new("LocalScript", G2L["9f1"]);
 G2L["9f2"]["Name"] = [[TransparencySliderScript]];
 
 
--- StarterGui.Ravion.Main.Setting.Setting.Transparency.TransparencySlider.Slider.UICorner
 G2L["9f3"] = Instance.new("UICorner", G2L["9f1"]);
 G2L["9f3"]["CornerRadius"] = UDim.new(0, 10);
 
 
--- StarterGui.Ravion.Main.Top
+G2L["unload1"] = Instance.new("Frame", G2L["9d4"]);
+G2L["unload1"]["BorderSizePixel"] = 0;
+G2L["unload1"]["BackgroundColor3"] = Color3.fromRGB(27, 27, 35);
+G2L["unload1"]["Size"] = UDim2.new(0, 292, 0, 29);
+G2L["unload1"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["unload1"]["Name"] = [[Unload]];
+
+
+G2L["unload2"] = Instance.new("UICorner", G2L["unload1"]);
+G2L["unload2"]["CornerRadius"] = UDim.new(0, 16);
+
+
+G2L["unload3"] = Instance.new("UIStroke", G2L["unload1"]);
+G2L["unload3"]["Transparency"] = 0.5;
+G2L["unload3"]["Color"] = Color3.fromRGB(41, 41, 53);
+
+
+G2L["unload4"] = Instance.new("TextButton", G2L["unload1"]);
+G2L["unload4"]["BorderSizePixel"] = 0;
+G2L["unload4"]["TextSize"] = 14;
+G2L["unload4"]["AutoButtonColor"] = false;
+G2L["unload4"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["unload4"]["BackgroundColor3"] = Color3.fromRGB(177, 54, 23);
+G2L["unload4"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Medium, Enum.FontStyle.Normal);
+G2L["unload4"]["Size"] = UDim2.new(0, 100, 0, 25);
+G2L["unload4"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["unload4"]["Text"] = [[Unload GUI]];
+G2L["unload4"]["Name"] = [[UnloadButton]];
+G2L["unload4"]["Position"] = UDim2.new(0.65, 0, 0.06897, 0);
+
+
+G2L["unload5"] = Instance.new("LocalScript", G2L["unload4"]);
+G2L["unload5"]["Name"] = [[UnloadScript]];
+
+
+G2L["unload6"] = Instance.new("UICorner", G2L["unload4"]);
+G2L["unload6"]["CornerRadius"] = UDim.new(0, 10);
+
+
+G2L["unload7"] = Instance.new("UIStroke", G2L["unload4"]);
+G2L["unload7"]["Transparency"] = 0.5;
+G2L["unload7"]["Color"] = Color3.fromRGB(141, 43, 18);
+G2L["unload7"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+
+
+G2L["unload8"] = Instance.new("TextLabel", G2L["unload1"]);
+G2L["unload8"]["BorderSizePixel"] = 0;
+G2L["unload8"]["TextSize"] = 14;
+G2L["unload8"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["unload8"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["unload8"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Medium, Enum.FontStyle.Normal);
+G2L["unload8"]["TextColor3"] = Color3.fromRGB(213, 213, 213);
+G2L["unload8"]["BackgroundTransparency"] = 1;
+G2L["unload8"]["Size"] = UDim2.new(0, 155, 0, 15);
+G2L["unload8"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["unload8"]["Text"] = [[Unload Menu]];
+G2L["unload8"]["Position"] = UDim2.new(0.04362, 0, 0.24138, 0);
+
+
 G2L["9b"] = Instance.new("Frame", G2L["2"]);
 G2L["9b"]["Size"] = UDim2.new(1, 0, -0.03519, 50);
 G2L["9b"]["Name"] = [[Top]];
 G2L["9b"]["BackgroundTransparency"] = 1;
 
 
--- StarterGui.Ravion.Main.Top.Close
 G2L["9c"] = Instance.new("TextButton", G2L["9b"]);
 G2L["9c"]["BorderSizePixel"] = 0;
 G2L["9c"]["TextSize"] = 18;
@@ -1542,17 +1658,14 @@ G2L["9c"]["Name"] = [[Close]];
 G2L["9c"]["Position"] = UDim2.new(1, -40, 0, 12);
 
 
--- StarterGui.Ravion.Main.Top.Close.CloseMenu
 G2L["9d"] = Instance.new("LocalScript", G2L["9c"]);
 G2L["9d"]["Name"] = [[CloseMenu]];
 
 
--- StarterGui.Ravion.Main.Top.Close.UICorner
 G2L["9e"] = Instance.new("UICorner", G2L["9c"]);
 
 
 
--- StarterGui.Ravion.Main.Top.Creator
 G2L["9f"] = Instance.new("TextLabel", G2L["9b"]);
 G2L["9f"]["TextWrapped"] = true;
 G2L["9f"]["BorderSizePixel"] = 0;
@@ -1570,7 +1683,6 @@ G2L["9f"]["Name"] = [[Creator]];
 G2L["9f"]["Position"] = UDim2.new(0.06471, 0, 0.81658, 0);
 
 
--- StarterGui.Ravion.Main.Top.Version
 G2L["a0"] = Instance.new("TextLabel", G2L["9b"]);
 G2L["a0"]["BorderSizePixel"] = 0;
 G2L["a0"]["TextSize"] = 11;
@@ -1587,7 +1699,6 @@ G2L["a0"]["Name"] = [[Version]];
 G2L["a0"]["Position"] = UDim2.new(0.2688, 0, 0.46163, 0);
 
 
--- StarterGui.Ravion.Main.Top.Name
 G2L["a1"] = Instance.new("TextLabel", G2L["9b"]);
 G2L["a1"]["BorderSizePixel"] = 0;
 G2L["a1"]["TextSize"] = 14;
@@ -1603,12 +1714,10 @@ G2L["a1"]["Name"] = [[Name]];
 G2L["a1"]["Position"] = UDim2.new(0.121, 0, 0.39064, 0);
 
 
--- StarterGui.Ravion.Main.Top.Name.UIGradient
 G2L["a2"] = Instance.new("UIGradient", G2L["a1"]);
 G2L["a2"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 65, 17)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(219, 58, 10))};
 
 
--- StarterGui.Ravion.Main.Top.Name
 G2L["a3"] = Instance.new("TextLabel", G2L["9b"]);
 G2L["a3"]["TextWrapped"] = true;
 G2L["a3"]["BorderSizePixel"] = 0;
@@ -1626,12 +1735,10 @@ G2L["a3"]["Name"] = [[Name]];
 G2L["a3"]["Position"] = UDim2.new(0.05263, 0, 0.1076, 0);
 
 
--- StarterGui.Ravion.Main.Top.Name.UIGradient
 G2L["a4"] = Instance.new("UIGradient", G2L["a3"]);
 G2L["a4"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 65, 17)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(219, 58, 10))};
 
 
--- StarterGui.Ravion.Main.UIStroke
 G2L["a5"] = Instance.new("UIStroke", G2L["2"]);
 G2L["a5"]["Transparency"] = 0.78;
 G2L["a5"]["Thickness"] = 2.7;
@@ -1639,12 +1746,10 @@ G2L["a5"]["Color"] = Color3.fromRGB(41, 41, 53);
 G2L["a5"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
 
 
--- StarterGui.Ravion.Main.UICorner
 G2L["a6"] = Instance.new("UICorner", G2L["2"]);
 G2L["a6"]["CornerRadius"] = UDim.new(0, 16);
 
 
--- StarterGui.Ravion.Main.UIStroke
 G2L["a7"] = Instance.new("UIStroke", G2L["2"]);
 G2L["a7"]["Transparency"] = 0.5;
 G2L["a7"]["Thickness"] = 1.4;
@@ -1653,7 +1758,6 @@ G2L["a7"]["LineJoinMode"] = Enum.LineJoinMode.Bevel;
 G2L["a7"]["BorderStrokePosition"] = Enum.BorderStrokePosition.Center;
 
 
--- StarterGui.Ravion.GrappleMenu
 G2L["a8"] = Instance.new("Frame", G2L["1"]);
 G2L["a8"]["Active"] = true;
 G2L["a8"]["BorderSizePixel"] = 0;
@@ -1665,31 +1769,26 @@ G2L["a8"]["Position"] = UDim2.new(0.25548, 0, 0.37602, 0);
 G2L["a8"]["Name"] = [[GrappleMenu]];
 
 
--- StarterGui.Ravion.GrappleMenu.DraggableMain
 G2L["a9"] = Instance.new("LocalScript", G2L["a8"]);
 G2L["a9"]["Name"] = [[DraggableMain]];
 
 
--- StarterGui.Ravion.GrappleMenu.UICorner
 G2L["aa"] = Instance.new("UICorner", G2L["a8"]);
 G2L["aa"]["CornerRadius"] = UDim.new(0, 16);
 
 
--- StarterGui.Ravion.GrappleMenu.UIStroke
 G2L["ab"] = Instance.new("UIStroke", G2L["a8"]);
 G2L["ab"]["Transparency"] = 0.5;
 G2L["ab"]["Thickness"] = 1.4;
 G2L["ab"]["Color"] = Color3.fromRGB(41, 41, 53);
 
 
--- StarterGui.Ravion.GrappleMenu.Top
 G2L["ac"] = Instance.new("Frame", G2L["a8"]);
 G2L["ac"]["Size"] = UDim2.new(1, 0, -0.08953, 50);
 G2L["ac"]["Name"] = [[Top]];
 G2L["ac"]["BackgroundTransparency"] = 1;
 
 
--- StarterGui.Ravion.GrappleMenu.Top.Close
 G2L["ad"] = Instance.new("TextButton", G2L["ac"]);
 G2L["ad"]["BorderSizePixel"] = 0;
 G2L["ad"]["TextSize"] = 18;
@@ -1703,17 +1802,14 @@ G2L["ad"]["Name"] = [[Close]];
 G2L["ad"]["Position"] = UDim2.new(1, -40, 0, 12);
 
 
--- StarterGui.Ravion.GrappleMenu.Top.Close.CloseMenu
 G2L["ae"] = Instance.new("LocalScript", G2L["ad"]);
 G2L["ae"]["Name"] = [[CloseMenu]];
 
 
--- StarterGui.Ravion.GrappleMenu.Top.Close.UICorner
 G2L["af"] = Instance.new("UICorner", G2L["ad"]);
 
 
 
--- StarterGui.Ravion.GrappleMenu.Top.Name
 G2L["b0"] = Instance.new("TextLabel", G2L["ac"]);
 G2L["b0"]["BorderSizePixel"] = 0;
 G2L["b0"]["TextSize"] = 14;
@@ -1729,12 +1825,10 @@ G2L["b0"]["Name"] = [[Name]];
 G2L["b0"]["Position"] = UDim2.new(0.178, 0, 0.391, 0);
 
 
--- StarterGui.Ravion.GrappleMenu.Top.Name.UIGradient
 G2L["b1"] = Instance.new("UIGradient", G2L["b0"]);
 G2L["b1"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 65, 17)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(219, 58, 10))};
 
 
--- StarterGui.Ravion.GrappleMenu.Top.Name
 G2L["b2"] = Instance.new("TextLabel", G2L["ac"]);
 G2L["b2"]["TextWrapped"] = true;
 G2L["b2"]["BorderSizePixel"] = 0;
@@ -1752,12 +1846,10 @@ G2L["b2"]["Name"] = [[Name]];
 G2L["b2"]["Position"] = UDim2.new(0.05263, 0, 0.1076, 0);
 
 
--- StarterGui.Ravion.GrappleMenu.Top.Name.UIGradient
 G2L["b3"] = Instance.new("UIGradient", G2L["b2"]);
 G2L["b3"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 65, 17)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(219, 58, 10))};
 
 
--- StarterGui.Ravion.GrappleMenu.UIStroke
 G2L["b4"] = Instance.new("UIStroke", G2L["a8"]);
 G2L["b4"]["Transparency"] = 0.78;
 G2L["b4"]["Thickness"] = 2.7;
@@ -1765,7 +1857,6 @@ G2L["b4"]["Color"] = Color3.fromRGB(41, 41, 53);
 G2L["b4"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
 
 
--- StarterGui.Ravion.GrappleMenu.Speed120
 G2L["b5"] = Instance.new("Frame", G2L["a8"]);
 G2L["b5"]["BorderSizePixel"] = 0;
 G2L["b5"]["BackgroundColor3"] = Color3.fromRGB(27, 27, 35);
@@ -1775,7 +1866,6 @@ G2L["b5"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["b5"]["Name"] = [[Speed120]];
 
 
--- StarterGui.Ravion.GrappleMenu.Speed120.Toggle
 G2L["b6"] = Instance.new("TextButton", G2L["b5"]);
 G2L["b6"]["BorderSizePixel"] = 0;
 G2L["b6"]["TextSize"] = 14;
@@ -1790,12 +1880,10 @@ G2L["b6"]["Name"] = [[Toggle]];
 G2L["b6"]["Position"] = UDim2.new(0.71301, 0, 0.06897, 0);
 
 
--- StarterGui.Ravion.GrappleMenu.Speed120.Toggle.SpeedHackGrappleScript
 G2L["b7"] = Instance.new("LocalScript", G2L["b6"]);
 G2L["b7"]["Name"] = [[SpeedHackGrappleScript]];
 
 
--- StarterGui.Ravion.GrappleMenu.Speed120.Toggle.Circle
 G2L["b8"] = Instance.new("Frame", G2L["b6"]);
 G2L["b8"]["BorderSizePixel"] = 0;
 G2L["b8"]["BackgroundColor3"] = Color3.fromRGB(31, 33, 43);
@@ -1805,24 +1893,20 @@ G2L["b8"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["b8"]["Name"] = [[Circle]];
 
 
--- StarterGui.Ravion.GrappleMenu.Speed120.Toggle.Circle.UICorner
 G2L["b9"] = Instance.new("UICorner", G2L["b8"]);
 G2L["b9"]["CornerRadius"] = UDim.new(0.9, 0);
 
 
--- StarterGui.Ravion.GrappleMenu.Speed120.Toggle.UIStroke
 G2L["ba"] = Instance.new("UIStroke", G2L["b6"]);
 G2L["ba"]["Transparency"] = 0.5;
 G2L["ba"]["Color"] = Color3.fromRGB(35, 35, 45);
 G2L["ba"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
 
 
--- StarterGui.Ravion.GrappleMenu.Speed120.Toggle.UICorner
 G2L["bb"] = Instance.new("UICorner", G2L["b6"]);
 G2L["bb"]["CornerRadius"] = UDim.new(0, 16);
 
 
--- StarterGui.Ravion.GrappleMenu.Speed120.TextLabel
 G2L["bc"] = Instance.new("TextLabel", G2L["b5"]);
 G2L["bc"]["BorderSizePixel"] = 0;
 G2L["bc"]["TextSize"] = 14;
@@ -1837,18 +1921,15 @@ G2L["bc"]["Text"] = [[Speed]];
 G2L["bc"]["Position"] = UDim2.new(0.05483, 0, 0.24138, 0);
 
 
--- StarterGui.Ravion.GrappleMenu.Speed120.UIStroke
 G2L["bd"] = Instance.new("UIStroke", G2L["b5"]);
 G2L["bd"]["Transparency"] = 0.5;
 G2L["bd"]["Color"] = Color3.fromRGB(41, 41, 53);
 
 
--- StarterGui.Ravion.GrappleMenu.Speed120.UICorner
 G2L["be"] = Instance.new("UICorner", G2L["b5"]);
 G2L["be"]["CornerRadius"] = UDim.new(0, 16);
 
 
--- StarterGui.Ravion.GrappleMenu.Speed120.TextBox
 G2L["bf"] = Instance.new("TextBox", G2L["b5"]);
 G2L["bf"]["BorderSizePixel"] = 0;
 G2L["bf"]["TextSize"] = 14;
@@ -1862,19 +1943,16 @@ G2L["bf"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["bf"]["Text"] = [[]];
 
 
--- StarterGui.Ravion.GrappleMenu.Speed120.TextBox.UICorner
 G2L["c0"] = Instance.new("UICorner", G2L["bf"]);
 G2L["c0"]["CornerRadius"] = UDim.new(0, 16);
 
 
--- StarterGui.Ravion.GrappleMenu.Speed120.TextBox.UIStroke
 G2L["c1"] = Instance.new("UIStroke", G2L["bf"]);
 G2L["c1"]["Transparency"] = 0.5;
 G2L["c1"]["Color"] = Color3.fromRGB(35, 35, 45);
 G2L["c1"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
 
 
--- StarterGui.Ravion.FloatMenu
 G2L["c2"] = Instance.new("Frame", G2L["1"]);
 G2L["c2"]["Active"] = true;
 G2L["c2"]["BorderSizePixel"] = 0;
@@ -1886,31 +1964,26 @@ G2L["c2"]["Position"] = UDim2.new(0.25452, 0, 0.59959, 0);
 G2L["c2"]["Name"] = [[FloatMenu]];
 
 
--- StarterGui.Ravion.FloatMenu.DraggableMain
 G2L["c3"] = Instance.new("LocalScript", G2L["c2"]);
 G2L["c3"]["Name"] = [[DraggableMain]];
 
 
--- StarterGui.Ravion.FloatMenu.UICorner
 G2L["c4"] = Instance.new("UICorner", G2L["c2"]);
 G2L["c4"]["CornerRadius"] = UDim.new(0, 16);
 
 
--- StarterGui.Ravion.FloatMenu.UIStroke
 G2L["c5"] = Instance.new("UIStroke", G2L["c2"]);
 G2L["c5"]["Transparency"] = 0.5;
 G2L["c5"]["Thickness"] = 1.4;
 G2L["c5"]["Color"] = Color3.fromRGB(41, 41, 53);
 
 
--- StarterGui.Ravion.FloatMenu.Top
 G2L["c6"] = Instance.new("Frame", G2L["c2"]);
 G2L["c6"]["Size"] = UDim2.new(1, 0, -0.08953, 50);
 G2L["c6"]["Name"] = [[Top]];
 G2L["c6"]["BackgroundTransparency"] = 1;
 
 
--- StarterGui.Ravion.FloatMenu.Top.Close
 G2L["c7"] = Instance.new("TextButton", G2L["c6"]);
 G2L["c7"]["BorderSizePixel"] = 0;
 G2L["c7"]["TextSize"] = 18;
@@ -1924,17 +1997,14 @@ G2L["c7"]["Name"] = [[Close]];
 G2L["c7"]["Position"] = UDim2.new(1, -40, 0, 12);
 
 
--- StarterGui.Ravion.FloatMenu.Top.Close.CloseMenu
 G2L["c8"] = Instance.new("LocalScript", G2L["c7"]);
 G2L["c8"]["Name"] = [[CloseMenu]];
 
 
--- StarterGui.Ravion.FloatMenu.Top.Close.UICorner
 G2L["c9"] = Instance.new("UICorner", G2L["c7"]);
 
 
 
--- StarterGui.Ravion.FloatMenu.Top.Name
 G2L["ca"] = Instance.new("TextLabel", G2L["c6"]);
 G2L["ca"]["BorderSizePixel"] = 0;
 G2L["ca"]["TextSize"] = 14;
@@ -1950,12 +2020,10 @@ G2L["ca"]["Name"] = [[Name]];
 G2L["ca"]["Position"] = UDim2.new(0.178, 0, 0.391, 0);
 
 
--- StarterGui.Ravion.FloatMenu.Top.Name.UIGradient
 G2L["cb"] = Instance.new("UIGradient", G2L["ca"]);
 G2L["cb"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 65, 17)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(219, 58, 10))};
 
 
--- StarterGui.Ravion.FloatMenu.Top.Name
 G2L["cc"] = Instance.new("TextLabel", G2L["c6"]);
 G2L["cc"]["TextWrapped"] = true;
 G2L["cc"]["BorderSizePixel"] = 0;
@@ -1973,12 +2041,10 @@ G2L["cc"]["Name"] = [[Name]];
 G2L["cc"]["Position"] = UDim2.new(0.05263, 0, 0.1076, 0);
 
 
--- StarterGui.Ravion.FloatMenu.Top.Name.UIGradient
 G2L["cd"] = Instance.new("UIGradient", G2L["cc"]);
 G2L["cd"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 65, 17)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(219, 58, 10))};
 
 
--- StarterGui.Ravion.FloatMenu.UIStroke
 G2L["ce"] = Instance.new("UIStroke", G2L["c2"]);
 G2L["ce"]["Transparency"] = 0.78;
 G2L["ce"]["Thickness"] = 2.7;
@@ -1986,7 +2052,6 @@ G2L["ce"]["Color"] = Color3.fromRGB(41, 41, 53);
 G2L["ce"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
 
 
--- StarterGui.Ravion.FloatMenu.Floatv2
 G2L["cf"] = Instance.new("Frame", G2L["c2"]);
 G2L["cf"]["BorderSizePixel"] = 0;
 G2L["cf"]["BackgroundColor3"] = Color3.fromRGB(27, 27, 35);
@@ -1996,7 +2061,6 @@ G2L["cf"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["cf"]["Name"] = [[Floatv2]];
 
 
--- StarterGui.Ravion.FloatMenu.Floatv2.Toggle
 G2L["d0"] = Instance.new("TextButton", G2L["cf"]);
 G2L["d0"]["BorderSizePixel"] = 0;
 G2L["d0"]["TextSize"] = 14;
@@ -2011,12 +2075,10 @@ G2L["d0"]["Name"] = [[Toggle]];
 G2L["d0"]["Position"] = UDim2.new(0.71301, 0, 0.06897, 0);
 
 
--- StarterGui.Ravion.FloatMenu.Floatv2.Toggle.FloatV2Script
 G2L["d1"] = Instance.new("LocalScript", G2L["d0"]);
 G2L["d1"]["Name"] = [[FloatV2Script]];
 
 
--- StarterGui.Ravion.FloatMenu.Floatv2.Toggle.Circle
 G2L["d2"] = Instance.new("Frame", G2L["d0"]);
 G2L["d2"]["BorderSizePixel"] = 0;
 G2L["d2"]["BackgroundColor3"] = Color3.fromRGB(31, 33, 43);
@@ -2026,24 +2088,20 @@ G2L["d2"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["d2"]["Name"] = [[Circle]];
 
 
--- StarterGui.Ravion.FloatMenu.Floatv2.Toggle.Circle.UICorner
 G2L["d3"] = Instance.new("UICorner", G2L["d2"]);
 G2L["d3"]["CornerRadius"] = UDim.new(0.9, 0);
 
 
--- StarterGui.Ravion.FloatMenu.Floatv2.Toggle.UIStroke
 G2L["d4"] = Instance.new("UIStroke", G2L["d0"]);
 G2L["d4"]["Transparency"] = 0.5;
 G2L["d4"]["Color"] = Color3.fromRGB(35, 35, 45);
 G2L["d4"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
 
 
--- StarterGui.Ravion.FloatMenu.Floatv2.Toggle.UICorner
 G2L["d5"] = Instance.new("UICorner", G2L["d0"]);
 G2L["d5"]["CornerRadius"] = UDim.new(0, 16);
 
 
--- StarterGui.Ravion.FloatMenu.Floatv2.TextLabel
 G2L["d6"] = Instance.new("TextLabel", G2L["cf"]);
 G2L["d6"]["BorderSizePixel"] = 0;
 G2L["d6"]["TextSize"] = 14;
@@ -2058,18 +2116,15 @@ G2L["d6"]["Text"] = [[Float v2]];
 G2L["d6"]["Position"] = UDim2.new(0.05483, 0, 0.24138, 0);
 
 
--- StarterGui.Ravion.FloatMenu.Floatv2.UIStroke
 G2L["d7"] = Instance.new("UIStroke", G2L["cf"]);
 G2L["d7"]["Transparency"] = 0.5;
 G2L["d7"]["Color"] = Color3.fromRGB(41, 41, 53);
 
 
--- StarterGui.Ravion.FloatMenu.Floatv2.UICorner
 G2L["d8"] = Instance.new("UICorner", G2L["cf"]);
 G2L["d8"]["CornerRadius"] = UDim.new(0, 16);
 
 
--- StarterGui.Ravion.FloatMenu.Floatv1
 G2L["d9"] = Instance.new("Frame", G2L["c2"]);
 G2L["d9"]["BorderSizePixel"] = 0;
 G2L["d9"]["BackgroundColor3"] = Color3.fromRGB(27, 27, 35);
@@ -2079,7 +2134,6 @@ G2L["d9"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["d9"]["Name"] = [[Floatv1]];
 
 
--- StarterGui.Ravion.FloatMenu.Floatv1.Toggle
 G2L["da"] = Instance.new("TextButton", G2L["d9"]);
 G2L["da"]["BorderSizePixel"] = 0;
 G2L["da"]["TextSize"] = 14;
@@ -2094,12 +2148,10 @@ G2L["da"]["Name"] = [[Toggle]];
 G2L["da"]["Position"] = UDim2.new(0.71301, 0, 0.06897, 0);
 
 
--- StarterGui.Ravion.FloatMenu.Floatv1.Toggle.FloatV1Script
 G2L["db"] = Instance.new("LocalScript", G2L["da"]);
 G2L["db"]["Name"] = [[FloatV1Script]];
 
 
--- StarterGui.Ravion.FloatMenu.Floatv1.Toggle.Circle
 G2L["dc"] = Instance.new("Frame", G2L["da"]);
 G2L["dc"]["BorderSizePixel"] = 0;
 G2L["dc"]["BackgroundColor3"] = Color3.fromRGB(31, 33, 43);
@@ -2109,24 +2161,20 @@ G2L["dc"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["dc"]["Name"] = [[Circle]];
 
 
--- StarterGui.Ravion.FloatMenu.Floatv1.Toggle.Circle.UICorner
 G2L["dd"] = Instance.new("UICorner", G2L["dc"]);
 G2L["dd"]["CornerRadius"] = UDim.new(0.9, 0);
 
 
--- StarterGui.Ravion.FloatMenu.Floatv1.Toggle.UIStroke
 G2L["de"] = Instance.new("UIStroke", G2L["da"]);
 G2L["de"]["Transparency"] = 0.5;
 G2L["de"]["Color"] = Color3.fromRGB(35, 35, 45);
 G2L["de"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
 
 
--- StarterGui.Ravion.FloatMenu.Floatv1.Toggle.UICorner
 G2L["df"] = Instance.new("UICorner", G2L["da"]);
 G2L["df"]["CornerRadius"] = UDim.new(0, 16);
 
 
--- StarterGui.Ravion.FloatMenu.Floatv1.TextLabel
 G2L["e0"] = Instance.new("TextLabel", G2L["d9"]);
 G2L["e0"]["BorderSizePixel"] = 0;
 G2L["e0"]["TextSize"] = 14;
@@ -2141,18 +2189,15 @@ G2L["e0"]["Text"] = [[Float v1]];
 G2L["e0"]["Position"] = UDim2.new(0.05483, 0, 0.24138, 0);
 
 
--- StarterGui.Ravion.FloatMenu.Floatv1.UIStroke
 G2L["e1"] = Instance.new("UIStroke", G2L["d9"]);
 G2L["e1"]["Transparency"] = 0.5;
 G2L["e1"]["Color"] = Color3.fromRGB(41, 41, 53);
 
 
--- StarterGui.Ravion.FloatMenu.Floatv1.UICorner
 G2L["e2"] = Instance.new("UICorner", G2L["d9"]);
 G2L["e2"]["CornerRadius"] = UDim.new(0, 16);
 
 
--- StarterGui.Ravion.Open/Close
 G2L["e3"] = Instance.new("TextButton", G2L["1"]);
 G2L["e3"]["TextWrapped"] = true;
 G2L["e3"]["BorderSizePixel"] = 0;
@@ -2170,12 +2215,10 @@ G2L["e3"]["Name"] = [[Open/Close]];
 G2L["e3"]["Position"] = UDim2.new(0.10267, 0, 0.5, 0);
 
 
--- StarterGui.Ravion.Open/Close.DraggableMain
 G2L["e4"] = Instance.new("LocalScript", G2L["e3"]);
 G2L["e4"]["Name"] = [[DraggableMain]];
 
 
--- StarterGui.Ravion.Open/Close.UIStroke
 G2L["e5"] = Instance.new("UIStroke", G2L["e3"]);
 G2L["e5"]["Transparency"] = 0.78;
 G2L["e5"]["Thickness"] = 2.7;
@@ -2183,12 +2226,10 @@ G2L["e5"]["Color"] = Color3.fromRGB(41, 41, 53);
 G2L["e5"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
 
 
--- StarterGui.Ravion.Open/Close.UICorner
 G2L["e6"] = Instance.new("UICorner", G2L["e3"]);
 G2L["e6"]["CornerRadius"] = UDim.new(0, 16);
 
 
--- StarterGui.Ravion.Open/Close.Title
 G2L["e7"] = Instance.new("TextLabel", G2L["e3"]);
 G2L["e7"]["TextWrapped"] = true;
 G2L["e7"]["BorderSizePixel"] = 0;
@@ -2204,12 +2245,10 @@ G2L["e7"]["Text"] = [[R]];
 G2L["e7"]["Name"] = [[Title]];
 
 
--- StarterGui.Ravion.Open/Close.Title.UIGradient
 G2L["e8"] = Instance.new("UIGradient", G2L["e7"]);
 G2L["e8"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 65, 17)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(219, 58, 10))};
 
 
--- StarterGui.Ravion.3rdMenu
 G2L["e9"] = Instance.new("Frame", G2L["1"]);
 G2L["e9"]["Active"] = true;
 G2L["e9"]["BorderSizePixel"] = 0;
@@ -2221,31 +2260,26 @@ G2L["e9"]["Position"] = UDim2.new(0.74545, 0, 0.38322, 0);
 G2L["e9"]["Name"] = [[3rdMenu]];
 
 
--- StarterGui.Ravion.3rdMenu.DraggableMain
 G2L["ea"] = Instance.new("LocalScript", G2L["e9"]);
 G2L["ea"]["Name"] = [[DraggableMain]];
 
 
--- StarterGui.Ravion.3rdMenu.UICorner
 G2L["eb"] = Instance.new("UICorner", G2L["e9"]);
 G2L["eb"]["CornerRadius"] = UDim.new(0, 16);
 
 
--- StarterGui.Ravion.3rdMenu.UIStroke
 G2L["ec"] = Instance.new("UIStroke", G2L["e9"]);
 G2L["ec"]["Transparency"] = 0.5;
 G2L["ec"]["Thickness"] = 1.4;
 G2L["ec"]["Color"] = Color3.fromRGB(41, 41, 53);
 
 
--- StarterGui.Ravion.3rdMenu.Top
 G2L["ed"] = Instance.new("Frame", G2L["e9"]);
 G2L["ed"]["Size"] = UDim2.new(1, 0, -0.08953, 50);
 G2L["ed"]["Name"] = [[Top]];
 G2L["ed"]["BackgroundTransparency"] = 1;
 
 
--- StarterGui.Ravion.3rdMenu.Top.Close
 G2L["ee"] = Instance.new("TextButton", G2L["ed"]);
 G2L["ee"]["BorderSizePixel"] = 0;
 G2L["ee"]["TextSize"] = 18;
@@ -2259,17 +2293,14 @@ G2L["ee"]["Name"] = [[Close]];
 G2L["ee"]["Position"] = UDim2.new(1, -40, 0, 12);
 
 
--- StarterGui.Ravion.3rdMenu.Top.Close.CloseMenu
 G2L["ef"] = Instance.new("LocalScript", G2L["ee"]);
 G2L["ef"]["Name"] = [[CloseMenu]];
 
 
--- StarterGui.Ravion.3rdMenu.Top.Close.UICorner
 G2L["f0"] = Instance.new("UICorner", G2L["ee"]);
 
 
 
--- StarterGui.Ravion.3rdMenu.Top.Name
 G2L["f1"] = Instance.new("TextLabel", G2L["ed"]);
 G2L["f1"]["BorderSizePixel"] = 0;
 G2L["f1"]["TextSize"] = 14;
@@ -2285,12 +2316,10 @@ G2L["f1"]["Name"] = [[Name]];
 G2L["f1"]["Position"] = UDim2.new(0.178, 0, 0.391, 0);
 
 
--- StarterGui.Ravion.3rdMenu.Top.Name.UIGradient
 G2L["f2"] = Instance.new("UIGradient", G2L["f1"]);
 G2L["f2"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 65, 17)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(219, 58, 10))};
 
 
--- StarterGui.Ravion.3rdMenu.Top.Name
 G2L["f3"] = Instance.new("TextLabel", G2L["ed"]);
 G2L["f3"]["TextWrapped"] = true;
 G2L["f3"]["BorderSizePixel"] = 0;
@@ -2308,12 +2337,10 @@ G2L["f3"]["Name"] = [[Name]];
 G2L["f3"]["Position"] = UDim2.new(0.05263, 0, 0.1076, 0);
 
 
--- StarterGui.Ravion.3rdMenu.Top.Name.UIGradient
 G2L["f4"] = Instance.new("UIGradient", G2L["f3"]);
 G2L["f4"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 65, 17)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(219, 58, 10))};
 
 
--- StarterGui.Ravion.3rdMenu.UIStroke
 G2L["f5"] = Instance.new("UIStroke", G2L["e9"]);
 G2L["f5"]["Transparency"] = 0.78;
 G2L["f5"]["Thickness"] = 2.7;
@@ -2321,7 +2348,6 @@ G2L["f5"]["Color"] = Color3.fromRGB(41, 41, 53);
 G2L["f5"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
 
 
--- StarterGui.Ravion.3rdMenu.3rdFloor
 G2L["f6"] = Instance.new("Frame", G2L["e9"]);
 G2L["f6"]["BorderSizePixel"] = 0;
 G2L["f6"]["BackgroundColor3"] = Color3.fromRGB(27, 27, 35);
@@ -2331,7 +2357,6 @@ G2L["f6"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["f6"]["Name"] = [[3rdFloor]];
 
 
--- StarterGui.Ravion.3rdMenu.3rdFloor.Toggle
 G2L["f7"] = Instance.new("TextButton", G2L["f6"]);
 G2L["f7"]["BorderSizePixel"] = 0;
 G2L["f7"]["TextSize"] = 14;
@@ -2346,12 +2371,10 @@ G2L["f7"]["Name"] = [[Toggle]];
 G2L["f7"]["Position"] = UDim2.new(0.71301, 0, 0.06897, 0);
 
 
--- StarterGui.Ravion.3rdMenu.3rdFloor.Toggle.Qwe2rScript
 G2L["f8"] = Instance.new("LocalScript", G2L["f7"]);
 G2L["f8"]["Name"] = [[Qwe2rScript]];
 
 
--- StarterGui.Ravion.3rdMenu.3rdFloor.Toggle.Circle
 G2L["f9"] = Instance.new("Frame", G2L["f7"]);
 G2L["f9"]["BorderSizePixel"] = 0;
 G2L["f9"]["BackgroundColor3"] = Color3.fromRGB(31, 33, 43);
@@ -2361,24 +2384,20 @@ G2L["f9"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["f9"]["Name"] = [[Circle]];
 
 
--- StarterGui.Ravion.3rdMenu.3rdFloor.Toggle.Circle.UICorner
 G2L["fa"] = Instance.new("UICorner", G2L["f9"]);
 G2L["fa"]["CornerRadius"] = UDim.new(0.9, 0);
 
 
--- StarterGui.Ravion.3rdMenu.3rdFloor.Toggle.UIStroke
 G2L["fb"] = Instance.new("UIStroke", G2L["f7"]);
 G2L["fb"]["Transparency"] = 0.5;
 G2L["fb"]["Color"] = Color3.fromRGB(35, 35, 45);
 G2L["fb"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
 
 
--- StarterGui.Ravion.3rdMenu.3rdFloor.Toggle.UICorner
 G2L["fc"] = Instance.new("UICorner", G2L["f7"]);
 G2L["fc"]["CornerRadius"] = UDim.new(0, 16);
 
 
--- StarterGui.Ravion.3rdMenu.3rdFloor.TextLabel
 G2L["fd"] = Instance.new("TextLabel", G2L["f6"]);
 G2L["fd"]["BorderSizePixel"] = 0;
 G2L["fd"]["TextSize"] = 14;
@@ -2393,18 +2412,15 @@ G2L["fd"]["Text"] = [[3rd Floor]];
 G2L["fd"]["Position"] = UDim2.new(0.05483, 0, 0.24138, 0);
 
 
--- StarterGui.Ravion.3rdMenu.3rdFloor.UIStroke
 G2L["fe"] = Instance.new("UIStroke", G2L["f6"]);
 G2L["fe"]["Transparency"] = 0.5;
 G2L["fe"]["Color"] = Color3.fromRGB(41, 41, 53);
 
 
--- StarterGui.Ravion.3rdMenu.3rdFloor.UICorner
 G2L["ff"] = Instance.new("UICorner", G2L["f6"]);
 G2L["ff"]["CornerRadius"] = UDim.new(0, 16);
 
 
--- StarterGui.Ravion.Main.DraggableMain
 local function C_3()
 local script = G2L["3"];
 	local Main = script.Parent
@@ -2468,7 +2484,6 @@ local script = G2L["3"];
 		end
 	end)
 	
-	-- Очистка при уничтожении
 	Main.AncestryChanged:Connect(function()
 		if not Main.Parent then
 			cleanupDrag()
@@ -2481,7 +2496,137 @@ local script = G2L["3"];
 	
 end;
 task.spawn(C_3);
--- StarterGui.Ravion.Main.TabSwitcher
+
+-- Global Notification Manager
+local NotificationManager = {}
+NotificationManager.enabled = true
+NotificationManager.activeNotifications = {}
+NotificationManager.maxNotifications = 3
+
+function NotificationManager.createNotification(title, message)
+	if not NotificationManager.enabled then return end
+	
+	local Players = game:GetService("Players")
+	local TweenService = game:GetService("TweenService")
+	local playerGui = Players.LocalPlayer:WaitForChild("PlayerGui")
+	
+	-- Remove oldest notification if we have too many
+	if #NotificationManager.activeNotifications >= NotificationManager.maxNotifications then
+		local oldest = table.remove(NotificationManager.activeNotifications, 1)
+		if oldest and oldest.Parent then
+			local fadeOut = TweenService:Create(oldest, TweenInfo.new(0.3, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {
+				BackgroundTransparency = 1
+			})
+			fadeOut:Play()
+			fadeOut.Completed:Connect(function()
+				oldest:Destroy()
+			end)
+		end
+	end
+	
+	-- Create notification GUI
+	local notifGui = Instance.new("ScreenGui")
+	notifGui.Name = "RavionNotification"
+	notifGui.ResetOnSpawn = false
+	notifGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+	notifGui.Parent = playerGui
+	
+	local notifFrame = Instance.new("Frame")
+	notifFrame.Name = "NotificationFrame"
+	notifFrame.BackgroundColor3 = Color3.fromRGB(27, 27, 35)
+	notifFrame.BorderSizePixel = 0
+	notifFrame.Size = UDim2.new(0, 280, 0, 70)
+	notifFrame.Position = UDim2.new(1, 10, 0.02, (#NotificationManager.activeNotifications * 80))
+	notifFrame.BackgroundTransparency = 1
+	notifFrame.Parent = notifGui
+	
+	local corner = Instance.new("UICorner")
+	corner.CornerRadius = UDim.new(0, 12)
+	corner.Parent = notifFrame
+	
+	local stroke = Instance.new("UIStroke")
+	stroke.Color = Color3.fromRGB(197, 48, 2)
+	stroke.Thickness = 1.5
+	stroke.Transparency = 0.3
+	stroke.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+	stroke.Parent = notifFrame
+	
+	local titleLabel = Instance.new("TextLabel")
+	titleLabel.Name = "Title"
+	titleLabel.BackgroundTransparency = 1
+	titleLabel.Position = UDim2.new(0.05, 0, 0.1, 0)
+	titleLabel.Size = UDim2.new(0.9, 0, 0.35, 0)
+	titleLabel.Font = Enum.Font.GothamBold
+	titleLabel.Text = title
+	titleLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+	titleLabel.TextSize = 14
+	titleLabel.TextXAlignment = Enum.TextXAlignment.Left
+	titleLabel.TextTransparency = 1
+	titleLabel.Parent = notifFrame
+	
+	local messageLabel = Instance.new("TextLabel")
+	messageLabel.Name = "Message"
+	messageLabel.BackgroundTransparency = 1
+	messageLabel.Position = UDim2.new(0.05, 0, 0.5, 0)
+	messageLabel.Size = UDim2.new(0.9, 0, 0.4, 0)
+	messageLabel.Font = Enum.Font.Gotham
+	messageLabel.Text = message
+	messageLabel.TextColor3 = Color3.fromRGB(200, 200, 200)
+	messageLabel.TextSize = 12
+	messageLabel.TextXAlignment = Enum.TextXAlignment.Left
+	messageLabel.TextTransparency = 1
+	messageLabel.Parent = notifFrame
+	
+	table.insert(NotificationManager.activeNotifications, notifFrame)
+	
+	-- Slide in animation
+	local slideIn = TweenService:Create(notifFrame, TweenInfo.new(0.4, Enum.EasingStyle.Back, Enum.EasingDirection.Out), {
+		Position = UDim2.new(1, -290, 0.02, (#NotificationManager.activeNotifications - 1) * 80),
+		BackgroundTransparency = 0
+	})
+	
+	local fadeInTitle = TweenService:Create(titleLabel, TweenInfo.new(0.4, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {
+		TextTransparency = 0
+	})
+	
+	local fadeInMessage = TweenService:Create(messageLabel, TweenInfo.new(0.4, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {
+		TextTransparency = 0.2
+	})
+	
+	slideIn:Play()
+	fadeInTitle:Play()
+	fadeInMessage:Play()
+	
+	-- Auto-remove after 3 seconds
+	task.delay(3, function()
+		if notifFrame and notifFrame.Parent then
+			local slideOut = TweenService:Create(notifFrame, TweenInfo.new(0.3, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {
+				Position = UDim2.new(1, 10, notifFrame.Position.Y.Scale, notifFrame.Position.Y.Offset),
+				BackgroundTransparency = 1
+			})
+			
+			local fadeOutTitle = TweenService:Create(titleLabel, TweenInfo.new(0.3), {TextTransparency = 1})
+			local fadeOutMessage = TweenService:Create(messageLabel, TweenInfo.new(0.3), {TextTransparency = 1})
+			
+			slideOut:Play()
+			fadeOutTitle:Play()
+			fadeOutMessage:Play()
+			
+			slideOut.Completed:Connect(function()
+				notifGui:Destroy()
+				for i, notif in ipairs(NotificationManager.activeNotifications) do
+					if notif == notifFrame then
+						table.remove(NotificationManager.activeNotifications, i)
+						break
+					end
+				end
+			end)
+		end
+	end)
+end
+
+_G.RavionNotify = NotificationManager
+
 local function C_4()
 local script = G2L["4"];
 	local main = script.Parent
@@ -2520,7 +2665,6 @@ local script = G2L["4"];
 		[settingBtn] = false
 	}
 	
-	-- Текущая активная вкладка
 	local currentTab = "Stealer"
 	local isAnimating = false
 	
@@ -2663,7 +2807,58 @@ local script = G2L["4"];
 	end)
 end;
 task.spawn(C_4);
--- StarterGui.Ravion.Main.Stealer.Stealer.Float.Toggle.Float1Script
+local function C_9db()
+local script = G2L["9db"];
+	local toggleButton = script.Parent
+	local circle = toggleButton:FindFirstChild("Circle")
+	local TweenService = game:GetService("TweenService")
+	
+	local defaultPos = UDim2.new(0.1, 0, 0.2, 0)
+	local toggledPos = UDim2.new(0.55, 0, 0.2, 0)
+	
+	local defaultColor = Color3.fromRGB(30, 32, 42)
+	local toggledColor = Color3.fromRGB(197, 48, 2)
+	
+	local isToggled = true -- Enabled by default
+	
+	local tweenInfo = TweenInfo.new(
+		0.25,
+		Enum.EasingStyle.Quad,
+		Enum.EasingDirection.Out
+	)
+	
+	local function updateCircle(targetPos, targetColor)
+		if circle then
+			local tween = TweenService:Create(circle, tweenInfo, {
+				Position = targetPos, 
+				BackgroundColor3 = targetColor
+			})
+			tween:Play()
+		end
+	end
+	
+	-- Initialize as enabled
+	if circle then
+		circle.Position = toggledPos
+		circle.BackgroundColor3 = toggledColor
+	end
+	
+	toggleButton.MouseButton1Click:Connect(function()
+		isToggled = not isToggled
+		if isToggled then
+			updateCircle(toggledPos, toggledColor)
+			if _G.RavionNotify then
+				_G.RavionNotify.enabled = true
+			end
+		else
+			updateCircle(defaultPos, defaultColor)
+			if _G.RavionNotify then
+				_G.RavionNotify.enabled = false
+			end
+		end
+	end)
+end;
+task.spawn(C_9db);
 local function C_1c()
 local script = G2L["1c"];
 	local toggleButton = script.Parent
@@ -2684,7 +2879,6 @@ local script = G2L["1c"];
 		Enum.EasingDirection.Out
 	)
 	
-	-- Получаем объект GrappleMenu
 	local grappleMenu = nil
 	do
 		local playerGui = game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui")
@@ -2711,10 +2905,16 @@ local script = G2L["1c"];
 			if grappleMenu then
 				grappleMenu.Visible = true
 			end
+			if _G.RavionNotify then
+				_G.RavionNotify.createNotification("Float", "Enabled")
+			end
 		else
 			updateCircle(defaultPos, defaultColor)
 			if grappleMenu then
 				grappleMenu.Visible = false
+			end
+			if _G.RavionNotify then
+				_G.RavionNotify.createNotification("Float", "Disabled")
 			end
 		end
 	end)
@@ -2724,12 +2924,10 @@ local script = G2L["1c"];
 		circle.BackgroundColor3 = defaultColor
 	end
 	
-	-- При старте меню скрыто
 	if grappleMenu then
 		grappleMenu.Visible = false
 	end
 	
-	-- Проверка состояния GrappleMenu.Visible
 	if grappleMenu then
 		grappleMenu:GetPropertyChangedSignal("Visible"):Connect(function()
 			if not grappleMenu.Visible and isToggled then
@@ -2742,7 +2940,6 @@ local script = G2L["1c"];
 	
 end;
 task.spawn(C_1c);
--- StarterGui.Ravion.Main.Stealer.Stealer.3rd Floor.Toggle.3rdFloorScript
 local function C_26()
 local script = G2L["26"];
 	local toggleButton = script.Parent
@@ -2763,7 +2960,6 @@ local script = G2L["26"];
 		Enum.EasingDirection.Out
 	)
 	
-	-- Получаем объект GrappleMenu
 	local grappleMenu = nil
 	do
 		local playerGui = game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui")
@@ -2790,10 +2986,16 @@ local script = G2L["26"];
 			if grappleMenu then
 				grappleMenu.Visible = true
 			end
+			if _G.RavionNotify then
+				_G.RavionNotify.createNotification("3rd Floor", "Enabled")
+			end
 		else
 			updateCircle(defaultPos, defaultColor)
 			if grappleMenu then
 				grappleMenu.Visible = false
+			end
+			if _G.RavionNotify then
+				_G.RavionNotify.createNotification("3rd Floor", "Disabled")
 			end
 		end
 	end)
@@ -2803,12 +3005,10 @@ local script = G2L["26"];
 		circle.BackgroundColor3 = defaultColor
 	end
 	
-	-- При старте меню скрыто
 	if grappleMenu then
 		grappleMenu.Visible = false
 	end
 	
-	-- Проверка состояния GrappleMenu.Visible
 	if grappleMenu then
 		grappleMenu:GetPropertyChangedSignal("Visible"):Connect(function()
 			if not grappleMenu.Visible and isToggled then
@@ -2818,10 +3018,92 @@ local script = G2L["26"];
 		end)
 	end
 	
-	
 end;
 task.spawn(C_26);
--- StarterGui.Ravion.Main.Stealer.Stealer.Infinity jump.Toggle.InfinityjumpScript
+local function C_2c5()
+local script = G2L["2c5"];
+	local toggleButton = script.Parent
+	local circle = toggleButton:FindFirstChild("Circle")
+	local TweenService = game:GetService("TweenService")
+	local Players = game:GetService("Players")
+	local LocalPlayer = Players.LocalPlayer
+	
+	local defaultPos = UDim2.new(0.1, 0, 0.2, 0)
+	local toggledPos = UDim2.new(0.55, 0, 0.2, 0)
+	
+	local defaultColor = Color3.fromRGB(30, 32, 42)
+	local toggledColor = Color3.fromRGB(197, 48, 2)
+	
+	local isToggled = false
+	local isEnabled = false
+	local SemiInvis = nil
+	
+	local tweenInfo = TweenInfo.new(0.25, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
+	
+	local function updateCircle(targetPos, targetColor)
+		if circle then
+			local tween = TweenService:Create(circle, tweenInfo, { Position = targetPos, BackgroundColor3 = targetColor })
+			tween:Play()
+		end
+	end
+	
+	local SCRIPT_URL = "https://raw.githubusercontent.com/egor2078f/SemiInvis/refs/heads/main/invis"
+	
+	local success = pcall(function()
+		SemiInvis = loadstring(game:HttpGet(SCRIPT_URL))()
+	end)
+	
+	if not success or not SemiInvis then
+		warn("Failed to load Semi Invis script")
+		return
+	end
+	
+	local function toggleSemiInvis()
+		isEnabled = not isEnabled
+		if isEnabled then
+			if SemiInvis.StartSemiInvis then
+				SemiInvis.StartSemiInvis()
+			end
+		else
+			if SemiInvis.StopSemiInvis then
+				SemiInvis.StopSemiInvis()
+			end
+		end
+	end
+	
+	LocalPlayer.CharacterAdded:Connect(function()
+		if isEnabled then
+			wait(1)
+			if SemiInvis.StartSemiInvis then
+				SemiInvis.StartSemiInvis()
+			end
+		end
+	end)
+	
+	toggleButton.MouseButton1Click:Connect(function()
+		isToggled = not isToggled
+		if isToggled then
+			updateCircle(toggledPos, toggledColor)
+			toggleSemiInvis()
+			if _G.RavionNotify then
+				_G.RavionNotify.createNotification("Semi Invis", "Enabled")
+			end
+		else
+			updateCircle(defaultPos, defaultColor)
+			if isEnabled then
+				toggleSemiInvis()
+			end
+			if _G.RavionNotify then
+				_G.RavionNotify.createNotification("Semi Invis", "Disabled")
+			end
+		end
+	end)
+	
+	if circle then
+		updateCircle(defaultPos, defaultColor)
+	end
+end;
+task.spawn(C_2c5);
 local function C_31()
 local script = G2L["31"];
 	local toggleButton = script.Parent
@@ -2842,7 +3124,7 @@ local script = G2L["31"];
 	local AirJumpEnabled = false
 	local jumpConnection = nil
 	local lastJumpTime = 0
-	local jumpCooldown = 0.2 -- ИЗМЕНЕНИЕ 1: Более "человеческий" кулдаун
+	local jumpCooldown = 0.1 -- Уменьшен кулдаун для более свободных прыжков
 	
 	local tweenInfo = TweenInfo.new(
 		0.25,
@@ -2860,7 +3142,6 @@ local script = G2L["31"];
 		end
 	end
 	
-	-- ИЗМЕНЕНИЕ 2: НОВАЯ, БОЛЕЕ БЕЗОПАСНАЯ ЛОГИКА ПРЫЖКА
 	local function ApplyImpulseJump()
 		local char = Player.Character
 		if not char then return end
@@ -2870,11 +3151,10 @@ local script = G2L["31"];
 	
 		if humanoid and rootPart then
 	
-			-- 1. Получаем текущую скорость и желаемую скорость
 			local currentVelocity = rootPart.AssemblyLinearVelocity
-			local jumpVelocity = (humanoid.JumpPower or 50) * 0.8 -- Та же цель, что и у тебя
+			-- Увеличена сила прыжка для более свободного управления
+			local jumpVelocity = (humanoid.JumpPower or 50) * 1.0
 	
-			-- 2. Вычисляем общую массу персонажа
 			local totalMass = 0
 			for _, part in ipairs(char:GetDescendants()) do
 				if part:IsA("BasePart") then
@@ -2882,18 +3162,12 @@ local script = G2L["31"];
 				end
 			end
 	
-			if totalMass == 0 then return end -- На всякий случай
+			if totalMass == 0 then return end
 	
-			-- 3. Вычисляем *разницу* в скорости, которую нам нужно компенсировать
-			--    Это самая важная часть. Мы не просто устанавливаем, а ДОБАВЛЯЕМ.
 			local velocityChange = jumpVelocity - currentVelocity.Y
 	
-			-- 4. Вычисляем физически-корректный импульс
-			--    Формула: Импульс = Масса * ИзменениеСкорости
 			local impulse = totalMass * velocityChange
 	
-			-- 5. Применяем импульс.
-			--    Это выглядит для сервера как "физическое событие", а не как чит.
 			rootPart:ApplyImpulse(Vector3.new(0, impulse, 0))
 		end
 	end
@@ -2912,13 +3186,14 @@ local script = G2L["31"];
 	
 			local humanoid = char:FindFirstChildOfClass("Humanoid")
 	
-			-- ИЗМЕНЕНИЕ 3: Проверяем, что мы в воздухе
-			-- Нет смысла применять это, если мы на земле (пусть работает обычный прыжок)
-			if humanoid and humanoid:GetState() == Enum.HumanoidStateType.Freefall then
-				ApplyImpulseJump() -- Используем новую функцию
-				lastJumpTime = currentTime
-			elseif humanoid and humanoid:GetState() ~= Enum.HumanoidStateType.Dead then
-				-- Если мы не в воздухе, просто сбрасываем таймер, чтобы обычный прыжок сработал
+			-- Разрешаем прыжки в любом состоянии (кроме смерти) для большей свободы
+			if humanoid and humanoid:GetState() ~= Enum.HumanoidStateType.Dead then
+				-- Прыгаем в воздухе или на земле
+				if humanoid:GetState() == Enum.HumanoidStateType.Freefall or 
+				   humanoid:GetState() == Enum.HumanoidStateType.Flying or
+				   humanoid:GetState() == Enum.HumanoidStateType.Jumping then
+					ApplyImpulseJump()
+				end
 				lastJumpTime = currentTime
 			end
 		end)
@@ -2937,14 +3212,19 @@ local script = G2L["31"];
 			updateCircle(toggledPos, toggledColor)
 			AirJumpEnabled = true
 			EnableAirJump()
+			if _G.RavionNotify then
+				_G.RavionNotify.createNotification("Infinity Jump", "Enabled")
+			end
 		else
 			updateCircle(defaultPos, defaultColor)
 			AirJumpEnabled = false
 			DisableAirJump()
+			if _G.RavionNotify then
+				_G.RavionNotify.createNotification("Infinity Jump", "Disabled")
+			end
 		end
 	end)
 	
-	-- Безопасность: отключаем при смерти или сбросе
 	local function handleCharacter(character)
 		if not character then return end
 		local humanoid = character:WaitForChild("Humanoid")
@@ -2967,7 +3247,6 @@ local script = G2L["31"];
 	end
 end;
 task.spawn(C_31);
--- StarterGui.Ravion.Main.Helper.Helper.God mode.Toggle.GodmodeScript
 local function C_41()
 local script = G2L["41"];
 	local toggleButton = script.Parent
@@ -3000,7 +3279,6 @@ local script = G2L["41"];
 		end
 	end
 	
-	-- Removes ragdoll constraints and restores movement
 	local function applyAntiRagdoll(character)
 		if not character then return end
 		local humanoid = character:FindFirstChildOfClass("Humanoid")
@@ -3018,30 +3296,25 @@ local script = G2L["41"];
 		end
 	end
 	
-	-- Enforce god mode: infinite health, no ragdoll, no stun, full movement (улучшено)
 	local function applyGodMode(character)
 		if not character then return end
 		local humanoid = character:FindFirstChildOfClass("Humanoid")
 		if humanoid then
-			-- Устанавливаем бесконечное здоровье
 			pcall(function()
 				humanoid.MaxHealth = math.huge
 				humanoid.Health = math.huge
 			end)
 			
-			-- Восстанавливаем движение
 			pcall(function()
 				humanoid.PlatformStand = false
 				humanoid.Sit = false
 				humanoid:ChangeState(Enum.HumanoidStateType.Running)
 			end)
 			
-			-- Отключаем повреждения
 			pcall(function()
 				humanoid:SetStateEnabled(Enum.HumanoidStateType.Dead, false)
 			end)
 			
-			-- Удаляем статус эффекты (stun, slow, frozen и т.д.)
 			for k, v in character:GetDescendants() do
 				pcall(function()
 					if v:IsA("BoolValue") or v:IsA("IntValue") or v:IsA("NumberValue") then
@@ -3054,7 +3327,6 @@ local script = G2L["41"];
 				end)
 			end
 			
-			-- Удаляем повреждения через BodyVelocity/BodyAngularVelocity если есть
 			for _, descendant in character:GetDescendants() do
 				pcall(function()
 					if descendant:IsA("BodyVelocity") or descendant:IsA("BodyAngularVelocity") then
@@ -3068,7 +3340,6 @@ local script = G2L["41"];
 		applyAntiRagdoll(character)
 	end
 	
-	-- Continuously enforce god mode while enabled (оптимизировано)
 	local godModeConnection = nil
 	
 	local function enableGodModeLoop()
@@ -3099,11 +3370,13 @@ local script = G2L["41"];
 			updateCircle(toggledPos, toggledColor)
 			godModeActive = true
 			enableGodModeLoop()
+			if _G.RavionNotify then
+				_G.RavionNotify.createNotification("God Mode", "Enabled")
+			end
 		else
 			updateCircle(defaultPos, defaultColor)
 			godModeActive = false
 			disableGodModeLoop()
-			-- Optionally restore normal health
 			local player = Players.LocalPlayer
 			local character = player.Character
 			if character then
@@ -3113,17 +3386,18 @@ local script = G2L["41"];
 					humanoid.Health = humanoid.MaxHealth
 				end
 			end
+			if _G.RavionNotify then
+				_G.RavionNotify.createNotification("God Mode", "Disabled")
+			end
 		end
 	end)
 	
-	-- Очистка при уничтожении
 	script.AncestryChanged:Connect(function()
 		if not script.Parent then
 			disableGodModeLoop()
 		end
 	end)
 	
-	-- Apply god mode on respawn if toggled
 	local player = Players.LocalPlayer
 	player.CharacterAdded:Connect(function(character)
 		if isToggled then
@@ -3139,13 +3413,13 @@ local script = G2L["41"];
 	
 end;
 task.spawn(C_41);
--- StarterGui.Ravion.Main.Helper.Helper.Esp player.Toggle.EspplayerScript
 local function C_4b()
 local script = G2L["4b"];
 	local toggleButton = script.Parent
 	local circle = toggleButton:FindFirstChild("Circle")
 	local TweenService = game:GetService("TweenService")
 	local Players = game:GetService("Players")
+	local RunService = game:GetService("RunService")
 	
 	local defaultPos = UDim2.new(0.1, 0, 0.2, 0)
 	local toggledPos = UDim2.new(0.55, 0, 0.2, 0)
@@ -3155,14 +3429,14 @@ local script = G2L["4b"];
 	
 	local isToggled = false
 	local espActive = false
+	local connections = {}
+	local highlights = {}
 	
 	local tweenInfo = TweenInfo.new(
 		0.25,
 		Enum.EasingStyle.Quad,
 		Enum.EasingDirection.Out
 	)
-	
-	local highlightColor = Color3.fromRGB(82, 255, 163)
 	
 	local function updateCircle(targetPos, targetColor)
 		if circle then
@@ -3177,14 +3451,17 @@ local script = G2L["4b"];
 	local function addESPToCharacter(character)
 		if not character then return end
 		if character:FindFirstChild("ESP_Highlight") then return end
+		
 		local highlight = Instance.new("Highlight")
 		highlight.Name = "ESP_Highlight"
-		highlight.FillColor = highlightColor
-		highlight.OutlineColor = highlightColor
-		highlight.FillTransparency = 0.2
+		highlight.FillColor = Color3.fromRGB(255, 85, 85)
+		highlight.OutlineColor = Color3.fromRGB(200, 50, 50)
+		highlight.FillTransparency = 0.4
 		highlight.OutlineTransparency = 0
 		highlight.Adornee = character
 		highlight.Parent = character
+		
+		highlights[character] = highlight
 	end
 	
 	local function removeESPFromCharacter(character)
@@ -3193,6 +3470,7 @@ local script = G2L["4b"];
 		if highlight then
 			highlight:Destroy()
 		end
+		highlights[character] = nil
 	end
 	
 	local function addESPToAllPlayers()
@@ -3224,7 +3502,10 @@ local script = G2L["4b"];
 	end
 	
 	local function onPlayerAdded(player)
-		player.CharacterAdded:Connect(onCharacterAdded)
+		if player ~= Players.LocalPlayer then
+			local conn = player.CharacterAdded:Connect(onCharacterAdded)
+			table.insert(connections, conn)
+		end
 	end
 	
 	toggleButton.MouseButton1Click:Connect(function()
@@ -3233,16 +3514,34 @@ local script = G2L["4b"];
 			updateCircle(toggledPos, toggledColor)
 			espActive = true
 			addESPToAllPlayers()
+			
 			for k, player in Players:GetPlayers() do
 				if player ~= Players.LocalPlayer then
-					player.CharacterAdded:Connect(onCharacterAdded)
+					local conn = player.CharacterAdded:Connect(onCharacterAdded)
+					table.insert(connections, conn)
 				end
 			end
-			Players.PlayerAdded:Connect(onPlayerAdded)
+			
+			local conn = Players.PlayerAdded:Connect(onPlayerAdded)
+			table.insert(connections, conn)
+			if _G.RavionNotify then
+				_G.RavionNotify.createNotification("ESP Player", "Enabled")
+			end
 		else
 			updateCircle(defaultPos, defaultColor)
 			espActive = false
 			removeESPFromAllPlayers()
+			
+			for _, conn in ipairs(connections) do
+				if conn and conn.Disconnect then
+					conn:Disconnect()
+				end
+			end
+			connections = {}
+			highlights = {}
+			if _G.RavionNotify then
+				_G.RavionNotify.createNotification("ESP Player", "Disabled")
+			end
 		end
 	end)
 	
@@ -3254,7 +3553,6 @@ local script = G2L["4b"];
 	
 end;
 task.spawn(C_4b);
--- StarterGui.Ravion.Main.Helper.Helper.Anti Ragdoll.Toggle.AntiRagdollScript
 local function C_a04()
 local script = G2L["a04"];
 	local toggleButton = script.Parent
@@ -3294,67 +3592,100 @@ local script = G2L["a04"];
 		local player = Players.LocalPlayer
 		if not player then return end
 		
+		local moveConnection = nil
+		local currentVelocity = Vector3.new(0, 0, 0)
+		local UserInputService = game:GetService("UserInputService")
+		local isMobile = UserInputService.TouchEnabled and not UserInputService.KeyboardEnabled
+		
 		local function restoreMovement(character, humanoid)
 			if not character or not humanoid then return end
 			
 			pcall(function()
-				-- Отключаем PlatformStand
-				humanoid.PlatformStand = false
-				
-				-- Получаем RootPart
 				local rootPart = humanoid.RootPart or character:FindFirstChild("HumanoidRootPart")
-				if rootPart then
-					-- Убеждаемся, что RootPart не закреплен
-					rootPart.Anchored = false
-					rootPart.CanCollide = true
-				end
 				
-				-- Разблокируем все части персонажа
-				for _, part in pairs(character:GetDescendants()) do
-					if part:IsA("BasePart") and part ~= rootPart then
-						pcall(function()
-							part.Anchored = false
-							part.CanCollide = true
-						end)
-					end
-				end
-				
-				-- Восстанавливаем Constraints
-				for _, constraint in pairs(character:GetDescendants()) do
-					if constraint:IsA("BallSocketConstraint") or 
-					   constraint:IsA("HingeConstraint") or 
-					   constraint:IsA("RigidConstraint") or
-					   constraint:IsA("WeldConstraint") or
-					   constraint:IsA("Weld") then
-						pcall(function()
-							if constraint.Enabled == false then
-								constraint.Enabled = true
+				-- Allow movement even in ragdoll state
+				if humanoid:GetState() == Enum.HumanoidStateType.Physics or humanoid.PlatformStand then
+					humanoid.PlatformStand = false
+					
+					if rootPart then
+						rootPart.Anchored = false
+						rootPart.CanCollide = true
+						
+						-- Enable movement while ragdolled
+						if moveConnection then
+							moveConnection:Disconnect()
+						end
+						
+						moveConnection = RunService.Heartbeat:Connect(function()
+							if not antiRagdollActive then 
+								if moveConnection then moveConnection:Disconnect() end
+								return 
+							end
+							
+							local character = player.Character
+							if not character then return end
+							local humanoid = character:FindFirstChildOfClass("Humanoid")
+							if not humanoid then return end
+							local rootPart = humanoid.RootPart or character:FindFirstChild("HumanoidRootPart")
+							if not rootPart then return end
+							
+							-- Get movement input (works for both PC and mobile)
+							local moveDirection = humanoid.MoveDirection
+							
+							-- Additional mobile support - check for touch input
+							if isMobile and moveDirection.Magnitude == 0 then
+								local touchPos = UserInputService:GetTouchPosition(1)
+								if touchPos then
+									-- Mobile player is touching screen, allow movement
+									moveDirection = humanoid.MoveDirection
+								end
+							end
+							
+							if moveDirection.Magnitude > 0 then
+								-- Apply movement force even in ragdoll
+								local moveSpeed = 16 -- Walking speed
+								local targetVelocity = moveDirection * moveSpeed
+								
+								-- Smooth velocity change
+								currentVelocity = currentVelocity:Lerp(targetVelocity, 0.3)
+								
+								-- Apply velocity to root part
+								local currentVel = rootPart.AssemblyLinearVelocity
+								rootPart.AssemblyLinearVelocity = Vector3.new(
+									currentVelocity.X,
+									currentVel.Y, -- Keep vertical velocity
+									currentVelocity.Z
+								)
+							else
+								currentVelocity = Vector3.new(0, 0, 0)
+							end
+							
+							-- Keep character upright while ragdolled
+							if humanoid:GetState() == Enum.HumanoidStateType.Physics then
+								local currentCFrame = rootPart.CFrame
+								local uprightCFrame = CFrame.new(currentCFrame.Position) * CFrame.Angles(0, math.atan2(-currentCFrame.LookVector.X, -currentCFrame.LookVector.Z), 0)
+								rootPart.CFrame = rootPart.CFrame:Lerp(uprightCFrame, 0.1)
 							end
 						end)
 					end
 				end
 				
-				-- Убеждаемся, что Humanoid активен
 				if humanoid:GetState() == Enum.HumanoidStateType.Dead then
-					return -- Если мертв, не восстанавливаем
+					if moveConnection then moveConnection:Disconnect() end
+					return
 				end
 				
-				-- Отключаем PlatformStand первым
 				humanoid.PlatformStand = false
 				
-				-- Включаем все необходимые состояния для передвижения
 				humanoid:SetStateEnabled(Enum.HumanoidStateType.FallingDown, true)
 				humanoid:SetStateEnabled(Enum.HumanoidStateType.Ragdoll, false)
 				humanoid:SetStateEnabled(Enum.HumanoidStateType.GettingUp, true)
 				humanoid:SetStateEnabled(Enum.HumanoidStateType.Physics, false)
 				
-				-- Переводим в нормальное состояние для передвижения
 				local currentState = humanoid:GetState()
 				if currentState == Enum.HumanoidStateType.Physics then
-					-- Быстро переводим в состояние, которое позволяет двигаться
 					humanoid:ChangeState(Enum.HumanoidStateType.GettingUp)
 					
-					-- Запускаем асинхронную проверку для дальнейшего перехода
 					task.spawn(function()
 						task.wait(0.15)
 						if not antiRagdollActive then return end
@@ -3368,7 +3699,6 @@ local script = G2L["a04"];
 							local newState = humanoid:GetState()
 							if newState == Enum.HumanoidStateType.Physics or humanoid.PlatformStand == true then
 								humanoid.PlatformStand = false
-								-- Пробуем перейти в состояние движения
 								local rootPart = humanoid.RootPart or character:FindFirstChild("HumanoidRootPart")
 								if rootPart then
 									local raycast = workspace:Raycast(rootPart.Position, Vector3.new(0, -5, 0))
@@ -3384,7 +3714,6 @@ local script = G2L["a04"];
 						end)
 					end)
 				elseif currentState ~= Enum.HumanoidStateType.Dead and humanoid.PlatformStand == true then
-					-- Если не в Physics, но PlatformStand включен - просто отключаем
 					humanoid.PlatformStand = false
 				end
 			end)
@@ -3404,12 +3733,10 @@ local script = G2L["a04"];
 				local isRagdollState = (currentState == Enum.HumanoidStateType.Physics)
 				local isPlatformStand = humanoid.PlatformStand == true
 				
-				-- Если в ragdoll состоянии или PlatformStand включен - восстанавливаем
 				if isRagdollState or isPlatformStand then
 					restoreMovement(character, humanoid)
 				end
 				
-				-- Дополнительная проверка: убеждаемся, что можем двигаться
 				local rootPart = humanoid.RootPart or character:FindFirstChild("HumanoidRootPart")
 				if rootPart and rootPart.Anchored then
 					rootPart.Anchored = false
@@ -3417,7 +3744,6 @@ local script = G2L["a04"];
 			end)
 		end
 		
-		-- Запускаем постоянную проверку с небольшой задержкой для производительности
 		if ragdollConnection then
 			ragdollConnection:Disconnect()
 		end
@@ -3426,7 +3752,6 @@ local script = G2L["a04"];
 			checkAndFixRagdoll()
 		end)
 		
-		-- Также обрабатываем изменение состояния мгновенно
 		local stateChangedConnections = {}
 		local function onStateChanged(oldState, newState)
 			if not antiRagdollActive then return end
@@ -3448,11 +3773,9 @@ local script = G2L["a04"];
 		local function setupCharacter(character)
 			local humanoid = character:FindFirstChildOfClass("Humanoid")
 			if humanoid then
-				-- Сохраняем соединение
 				local conn = humanoid.StateChanged:Connect(onStateChanged)
 				table.insert(stateChangedConnections, conn)
 				
-				-- Сразу восстанавливаем движение, если нужно
 				task.wait(0.1)
 				restoreMovement(character, humanoid)
 			end
@@ -3475,7 +3798,6 @@ local script = G2L["a04"];
 			ragdollConnection = nil
 		end
 		
-		-- Восстанавливаем нормальное поведение
 		task.spawn(function()
 			local player = Players.LocalPlayer
 			if player and player.Character then
@@ -3495,10 +3817,16 @@ local script = G2L["a04"];
 			updateCircle(toggledPos, toggledColor)
 			antiRagdollActive = true
 			enableAntiRagdoll()
+			if _G.RavionNotify then
+				_G.RavionNotify.createNotification("Anti-Ragdoll", "Enabled")
+			end
 		else
 			updateCircle(defaultPos, defaultColor)
 			antiRagdollActive = false
 			disableAntiRagdoll()
+			if _G.RavionNotify then
+				_G.RavionNotify.createNotification("Anti-Ragdoll", "Disabled")
+			end
 		end
 	end)
 	
@@ -3507,14 +3835,143 @@ local script = G2L["a04"];
 	end
 end;
 task.spawn(C_a04);
--- StarterGui.Ravion.Main.Helper.Helper.Esp best.Toggle.EspbestScript
+local function C_x04()
+local script = G2L["x04"];
+	local toggleButton = script.Parent
+	local circle = toggleButton:FindFirstChild("Circle")
+	local TweenService = game:GetService("TweenService")
+	local RunService = game:GetService("RunService")
+
+	local defaultPos = UDim2.new(0.1, 0, 0.2, 0)
+	local toggledPos = UDim2.new(0.55, 0, 0.2, 0)
+
+	local defaultColor = Color3.fromRGB(30, 32, 42)
+	local toggledColor = Color3.fromRGB(197, 48, 2)
+
+	local isToggled = false
+	local XRAY_TRANSPARENCY = 0.7
+	local connections = {}
+	local updateConnection = nil
+	local processedParts = {} -- Stores {part = originalTransparency}
+
+	local tweenInfo = TweenInfo.new(0.25, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
+
+	local function updateCircle(targetPos, targetColor)
+		if circle then
+			local tween = TweenService:Create(circle, tweenInfo, { Position = targetPos, BackgroundColor3 = targetColor })
+			tween:Play()
+		end
+	end
+
+	local function applyXRay(obj)
+		if obj and obj:IsA("BasePart") then
+			-- Save original transparency if not already saved
+			if processedParts[obj] == nil then
+				processedParts[obj] = obj.Transparency
+			end
+			obj.Transparency = XRAY_TRANSPARENCY
+		end
+	end
+
+	local function processFolder(folder)
+		for _, child in ipairs(folder:GetDescendants()) do
+			applyXRay(child)
+		end
+	end
+
+	local function processPlot(plot)
+		local laserHitbox = plot:FindFirstChild("LaserHitbox")
+		if laserHitbox then
+			processFolder(laserHitbox)
+		end
+		local decorations = plot:FindFirstChild("Decorations")
+		if decorations then
+			processFolder(decorations)
+		end
+	end
+
+	local function updateXRay()
+		local plots = workspace:FindFirstChild("Plots")
+		if not plots then return end
+		for _, plot in ipairs(plots:GetChildren()) do
+			processPlot(plot)
+		end
+	end
+
+	local lastUpdateTime = 0
+
+	local function enableXRay()
+		processedParts = {}
+		updateXRay()
+		
+		updateConnection = RunService.Heartbeat:Connect(function()
+			local currentTime = tick()
+			if currentTime - lastUpdateTime >= 1 then
+				lastUpdateTime = currentTime
+				updateXRay()
+			end
+		end)
+		
+		local plots = workspace:FindFirstChild("Plots")
+		if plots then
+			local conn = plots.ChildAdded:Connect(function(plot)
+				task.wait(0.1)
+				processPlot(plot)
+			end)
+			table.insert(connections, conn)
+		end
+	end
+
+	local function disableXRay()
+		if updateConnection then
+			updateConnection:Disconnect()
+			updateConnection = nil
+		end
+		
+		for _, conn in ipairs(connections) do
+			if conn and conn.Disconnect then conn:Disconnect() end
+		end
+		connections = {}
+		
+		-- Restore original transparency values
+		for part, originalTransparency in pairs(processedParts) do
+			if part and part.Parent then
+				pcall(function()
+					part.Transparency = originalTransparency
+				end)
+			end
+		end
+		processedParts = {}
+	end
+
+	toggleButton.MouseButton1Click:Connect(function()
+		isToggled = not isToggled
+		if isToggled then
+			updateCircle(toggledPos, toggledColor)
+			enableXRay()
+			if _G.RavionNotify then
+				_G.RavionNotify.createNotification("X-Ray", "Enabled")
+			end
+		else
+			updateCircle(defaultPos, defaultColor)
+			disableXRay()
+			if _G.RavionNotify then
+				_G.RavionNotify.createNotification("X-Ray", "Disabled")
+			end
+		end
+	end)
+
+	if circle then
+		updateCircle(defaultPos, defaultColor)
+	end
+end;
+task.spawn(C_x04);
 local function C_55()
 local script = G2L["55"];
 	local toggleButton = script.Parent
 	local circle = toggleButton:FindFirstChild("Circle")
 	local TweenService = game:GetService("TweenService")
 	
-	-- Переменные для переключателя
 	local defaultPos = UDim2.new(0.1, 0, 0.2, 0)
 	local toggledPos = UDim2.new(0.55, 0, 0.2, 0)
 	local defaultColor = Color3.fromRGB(30, 32, 42)
@@ -3527,7 +3984,6 @@ local script = G2L["55"];
 		Enum.EasingDirection.Out
 	)
 	
-	-- Переменные для ESP системы
 	local Players = game:GetService("Players")
 	local Workspace = game:GetService("Workspace")
 	local RunService = game:GetService("RunService")
@@ -3552,17 +4008,13 @@ local script = G2L["55"];
 		["OG"] = Color3.fromRGB(124, 103, 18)
 	}
 	
-	-- Функция для получения цвета по редкости
 	local function getColorByRarity(rarity)
-		-- Убираем пробелы и приводим к правильному регистру
 		if not rarity or rarity == "" then return nil end
 	
-		-- Проверяем точное совпадение
 		if RARITY_COLORS[rarity] then
 			return RARITY_COLORS[rarity]
 		end
 	
-		-- Проверяем без учета регистра и пробелов
 		local cleanRarity = rarity:gsub("%s+", " "):match("^%s*(.-)%s*$") -- trim
 		for key, color in pairs(RARITY_COLORS) do
 			if key:lower() == cleanRarity:lower() then
@@ -3573,7 +4025,6 @@ local script = G2L["55"];
 		return nil
 	end
 	
-	-- Функция для получения цвета по поколению (градиент)
 	local function getColorByGeneration(generation)
 		if generation < 10 then
 			return Color3.fromRGB(100, 255, 100) -- Зелёный
@@ -3604,13 +4055,11 @@ local script = G2L["55"];
 	local function parseGeneration(generationText)
 		if not generationText or generationText == "" then return 0 end
 	
-		-- Приводим к строке
 		generationText = tostring(generationText)
 	
 		local lower = generationText:lower()
 		if lower:match("ready") or lower:match("wait") or lower:match("fusing") then return 0 end
 	
-		-- Убираем все лишние символы
 		local cleanText = generationText:gsub(",", ""):gsub("%$", ""):gsub(" ", ""):gsub("/s", "")
 	
 		local multiplier = 1
@@ -3643,7 +4092,6 @@ local script = G2L["55"];
 			return true
 		end
 	
-		-- Дополнительная проверка в Generation
 		local generation = overhead:FindFirstChild("Generation")
 		if generation and generation.Text:lower():match("fusing") then
 			return true
@@ -3747,10 +4195,8 @@ local script = G2L["55"];
 		layout.VerticalAlignment = Enum.VerticalAlignment.Center
 		layout.Parent = frame
 	
-		-- Получаем цвет по редкости (приоритет 1)
 		local displayColor = getColorByRarity(animalData.Rarity)
 	
-		-- Если редкость не найдена, используем цвет по поколению (приоритет 2)
 		if not displayColor then
 			displayColor = getColorByGeneration(generation)
 		end
@@ -3834,13 +4280,11 @@ local script = G2L["55"];
 	
 				if not attachment:FindFirstChild("AnimalOverhead") then continue end
 	
-				-- Проверка на fusing ПЕРЕД получением данных
 				if isFusing(attachment) then continue end
 	
 				local animalData = getAnimalData(attachment)
 				local generation = parseGeneration(animalData.Generation)
 	
-				-- Дополнительная проверка на валидность данных
 				if generation > 0 and animalData.DisplayName ~= "Unknown" and animalData.DisplayName ~= "" then
 					table.insert(allAnimals, {
 						spawn = spawn,
@@ -3851,7 +4295,6 @@ local script = G2L["55"];
 			end
 		end
 	
-		-- Сортировка по поколению (от большего к меньшему)
 		table.sort(allAnimals, function(a, b)
 			return a.generation > b.generation
 		end)
@@ -3875,7 +4318,6 @@ local script = G2L["55"];
 		end
 	end
 	
-	-- Функция для анимации переключателя
 	local function updateCircle(targetPos, targetColor)
 		if circle then
 			local tween = TweenService:Create(circle, tweenInfo, {
@@ -3886,29 +4328,24 @@ local script = G2L["55"];
 		end
 	end
 	
-	-- Обработчик клика по переключателю
 	toggleButton.MouseButton1Click:Connect(function()
 		isToggled = not isToggled
 		espEnabled = isToggled
 	
 		if isToggled then
 			updateCircle(toggledPos, toggledColor)
-			-- Включаем ESP систему
 			task.spawn(initializeESP)
 		else
 			updateCircle(defaultPos, defaultColor)
-			-- Выключаем ESP систему
 			cleanAllESP()
 		end
 	end)
 	
-	-- Инициализация переключателя
 	if circle then
 		circle.Position = defaultPos
 		circle.BackgroundColor3 = defaultColor
 	end
 	
-	-- Обновление ESP (только когда включено)
 	RunService.Heartbeat:Connect(function()
 		if not espEnabled then return end
 	
@@ -3925,7 +4362,6 @@ local script = G2L["55"];
 	end)
 end;
 task.spawn(C_55);
--- StarterGui.Ravion.Main.Helper.Helper.Esp time.Toggle.Script
 local function C_67()
 local script = G2L["67"];
 	local toggleButton = script.Parent
@@ -3936,14 +4372,12 @@ local script = G2L["67"];
 	
 	local LocalPlayer = Players.LocalPlayer
 	
-	-- Переменные для переключателя
 	local defaultPos = UDim2.new(0.1, 0, 0.2, 0)
 	local toggledPos = UDim2.new(0.55, 0, 0.2, 0)
 	local defaultColor = Color3.fromRGB(30, 32, 42)
 	local toggledColor = Color3.fromRGB(197, 48, 2)
 	local isToggled = false
 	
-	-- Переменные для ESP Time Base
 	local espTimeBaseEnabled = false
 	local originalBillboardSettings = {}
 	
@@ -3953,7 +4387,6 @@ local script = G2L["67"];
 		Enum.EasingDirection.Out
 	)
 	
-	-- Функция для поиска нашей базы
 	local function getMyPlot()
 		local plots = Workspace:WaitForChild("Plots")
 		for _, plot in ipairs(plots:GetChildren()) do
@@ -3965,7 +4398,6 @@ local script = G2L["67"];
 		return nil
 	end
 	
-	-- ESP Time Base функции
 	local function EnableESPTimeBase()
 		for _, plot in ipairs(Workspace.Plots:GetChildren()) do
 			if plot ~= getMyPlot() then
@@ -3977,7 +4409,6 @@ local script = G2L["67"];
 						if main then
 							local billboardGui = main:FindFirstChild("BillboardGui")
 							if billboardGui and billboardGui:IsA("BillboardGui") then
-								-- Сохраняем оригинальные настройки
 								if not originalBillboardSettings[billboardGui] then
 									originalBillboardSettings[billboardGui] = {
 										MaxDistance = billboardGui.MaxDistance,
@@ -3986,7 +4417,6 @@ local script = G2L["67"];
 									}
 								end
 	
-								-- Применяем модификации
 								billboardGui.MaxDistance = 5000
 								billboardGui.Size = UDim2.new(50, 0, 60, 0)
 								billboardGui.AlwaysOnTop = true
@@ -4011,14 +4441,12 @@ local script = G2L["67"];
 		originalBillboardSettings = {}
 	end
 	
-	-- Функция для обновления всех BillboardGui (постоянное обновление)
 	local function updateAllBillboards()
 		if not espTimeBaseEnabled then return end
 	
 		EnableESPTimeBase()
 	end
 	
-	-- Функция для анимации переключателя
 	local function updateCircle(targetPos, targetColor)
 		if circle then
 			local tween = TweenService:Create(circle, tweenInfo, {
@@ -4029,36 +4457,30 @@ local script = G2L["67"];
 		end
 	end
 	
-	-- Обработчик клика по переключателю
 	toggleButton.MouseButton1Click:Connect(function()
 		isToggled = not isToggled
 		espTimeBaseEnabled = isToggled
 	
 		if isToggled then
 			updateCircle(toggledPos, toggledColor)
-			-- Включаем ESP Time Base
 			EnableESPTimeBase()
 			startESPUpdateLoop()
 		else
 			updateCircle(defaultPos, defaultColor)
-			-- Выключаем ESP Time Base
 			DisableESPTimeBase()
 			stopESPUpdateLoop()
 		end
 	end)
 	
-	-- Автоматическое обновление BillboardGui при появлении новых участков
 	local updateConnection = nil
 	local lastESPUpdate = 0
 	local ESP_UPDATE_INTERVAL = 5 -- секунд
 	
 	local function initializeESP()
 		if espTimeBaseEnabled then
-			-- Обновляем при запуске
 			task.wait(1)
 			EnableESPTimeBase()
 	
-			-- Настраиваем отслеживание новых участков
 			Workspace.Plots.ChildAdded:Connect(function(child)
 				if espTimeBaseEnabled then
 					task.wait(0.5) -- Небольшая задержка для полной загрузки участка
@@ -4068,7 +4490,6 @@ local script = G2L["67"];
 		end
 	end
 	
-	-- Периодическое обновление (оптимизировано с использованием таймера)
 	local function startESPUpdateLoop()
 		if updateConnection then return end
 		
@@ -4091,20 +4512,17 @@ local script = G2L["67"];
 		end
 	end
 	
-	-- Запускаем инициализацию
 	task.spawn(function()
 		task.wait(2) -- Ждем полной загрузки игры
 		initializeESP()
 	end)
 	
-	-- Инициализация переключателя
 	if circle then
 		circle.Position = defaultPos
 		circle.BackgroundColor3 = defaultColor
 	end
 end;
 task.spawn(C_67);
--- StarterGui.Ravion.Main.Helper.Helper.Esp name.Toggle.EspNameScript
 local function C_71()
 local script = G2L["71"];
 	local toggleButton = script.Parent
@@ -4245,7 +4663,6 @@ local script = G2L["71"];
 	end
 end;
 task.spawn(C_71);
--- StarterGui.Ravion.Main.Helper.Helper.Anti afk.Toggle.AntiAfkScript
 local function C_7b()
 local script = G2L["7b"];
 	local toggleButton = script.Parent
@@ -4276,11 +4693,9 @@ local script = G2L["7b"];
 		end
 	end
 	
-	-- Anti AFK без движений (только VirtualUser, без визуальных изменений)
 	local function enableAntiAfk()
 		if antiAfkConnection == nil then
 			antiAfkConnection = Players.LocalPlayer.Idled:Connect(function()
-				-- Используем VirtualUser для симуляции активности без визуальных движений
 				VirtualUser:CaptureController()
 				VirtualUser:ClickButton2(Vector2.new())
 			end)
@@ -4294,7 +4709,6 @@ local script = G2L["7b"];
 		end
 	end
 	
-	-- Обработка кнопки
 	toggleButton.MouseButton1Click:Connect(function()
 		isToggled = not isToggled
 		if isToggled then
@@ -4306,13 +4720,11 @@ local script = G2L["7b"];
 		end
 	end)
 	
-	-- Инициализация
 	if circle then
 		circle.Position = defaultPos
 		circle.BackgroundColor3 = defaultColor
 	end
 	
-	-- Проверка на удаление GUI
 	script.AncestryChanged:Connect(function()
 		if not script.Parent then
 			disableAntiAfk()
@@ -4320,7 +4732,6 @@ local script = G2L["7b"];
 	end)
 end;
 task.spawn(C_7b);
--- StarterGui.Ravion.Main.Helper.Helper.Speed.Toggle.GrappleOpenScript
 local function C_85()
 local script = G2L["85"];
 	local toggleButton = script.Parent
@@ -4341,7 +4752,6 @@ local script = G2L["85"];
 		Enum.EasingDirection.Out
 	)
 	
-	-- Получаем объект GrappleMenu
 	local grappleMenu = nil
 	do
 		local playerGui = game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui")
@@ -4381,12 +4791,10 @@ local script = G2L["85"];
 		circle.BackgroundColor3 = defaultColor
 	end
 	
-	-- При старте меню скрыто
 	if grappleMenu then
 		grappleMenu.Visible = false
 	end
 	
-	-- Проверка состояния GrappleMenu.Visible
 	if grappleMenu then
 		grappleMenu:GetPropertyChangedSignal("Visible"):Connect(function()
 			if not grappleMenu.Visible and isToggled then
@@ -4399,7 +4807,6 @@ local script = G2L["85"];
 	
 end;
 task.spawn(C_85);
--- StarterGui.Ravion.Main.Server.Server.Rejoin Server.RejoinServerButton
 local function C_94()
 local script = G2L["94"];
 	local button = script.Parent
@@ -4425,7 +4832,6 @@ local script = G2L["94"];
 	
 end;
 task.spawn(C_94);
--- StarterGui.Ravion.Main.Server.Server.Antilag.AntiLagScript
 local function C_98()
 local script = G2L["98"];
 	local button = script.Parent
@@ -4553,19 +4959,16 @@ local script = G2L["98"];
 	    end
 	end
 	
-	-- Улучшенная оптимизация памяти
 	local function optimizeMemory()
 		collectgarbage("collect")
 		collectgarbage("setpause", 100)
 		collectgarbage("setstepmul", 200)
 	end
 	
-	-- Оптимизация Network
 	local function optimizeNetwork()
 		settings().Network.IncomingReplicationLag = 0
 	end
 	
-	-- Улучшенная функция оптимизации
 	local function optimizeGame()
 		optimizeMemory()
 		optimizeNetwork()
@@ -4575,7 +4978,6 @@ local script = G2L["98"];
 		optimizeGui()
 		optimizeCamera()
 		
-		-- Дополнительная оптимизация звуков
 		pcall(function()
 			for _, sound in Workspace:GetDescendants() do
 				if sound:IsA("Sound") then
@@ -4585,7 +4987,6 @@ local script = G2L["98"];
 			end
 		end)
 		
-		-- Оптимизация ReplicatedStorage если доступен
 		pcall(function()
 			local ReplicatedStorage = game:GetService("ReplicatedStorage")
 			for _, obj in ReplicatedStorage:GetDescendants() do
@@ -4610,7 +5011,6 @@ local script = G2L["98"];
 	
 end;
 task.spawn(C_98);
--- StarterGui.Ravion.Main.Server.Server.Join by JobID.JoinButton.JoinByJobIDScript
 local function C_9b8()
 local script = G2L["9b8"];
 	local joinButton = script.Parent
@@ -4633,52 +5033,44 @@ local script = G2L["9b8"];
 		local pressTween = TweenService:Create(joinButton, tweenInfo, {BackgroundColor3 = pressedColor})
 		pressTween:Play()
 		
-		local jobId = textBox.Text:gsub("%s+", "") -- Убираем пробелы
+		local jobId = textBox.Text:gsub("%s+", "")
 		
 		if jobId and jobId ~= "" and jobId ~= "Enter JobID..." then
-			pcall(function()
-				local player = Players.LocalPlayer
-				if player and jobId ~= "" then
-					-- Используем правильный метод для телепортации
-					local success, errorMsg = pcall(function()
-						TeleportService:TeleportToPlaceInstance(game.PlaceId, jobId, {player})
-					end)
-					
-					if not success then
-						joinButton.Text = "Error!"
-						task.wait(1.5)
-						if joinButton then
-							joinButton.Text = "Join"
-						end
-					else
-						joinButton.Text = "Joining..."
-					end
+			local player = Players.LocalPlayer
+			if player then
+				joinButton.Text = "Joining..."
+				local success, errorMsg = pcall(function()
+					TeleportService:TeleportToPlaceInstance(game.PlaceId, jobId, player)
+				end)
+				
+				if not success then
+					joinButton.Text = "Error!"
+					task.wait(1.5)
+					joinButton.Text = "Join"
 				end
-			end)
+			end
+		else
+			joinButton.Text = "Enter JobID!"
+			task.wait(1)
+			joinButton.Text = "Join"
 		end
 		
 		task.delay(0.15, function()
-			if joinButton then
-				local revertTween = TweenService:Create(joinButton, tweenInfo, {BackgroundColor3 = normalColor})
-				revertTween:Play()
-			end
+			local revertTween = TweenService:Create(joinButton, tweenInfo, {BackgroundColor3 = normalColor})
+			revertTween:Play()
 		end)
 	end
 	
-	-- Поддержка вставки из буфера обмена (Ctrl+V / Cmd+V)
 	textBox:GetPropertyChangedSignal("Text"):Connect(function()
-		-- Автоматическая очистка placeholder при вводе
 		if textBox.Text == "Enter JobID..." then
 			textBox.Text = ""
 		end
 	end)
 	
-	-- Обработка вставки через Ctrl+V
 	UserInputService.InputBegan:Connect(function(input, gameProcessed)
 		if gameProcessed then return end
 		
 		if textBox:IsFocused() then
-			-- Проверка Ctrl+V или Cmd+V (на Mac)
 			local isCtrlV = (input.KeyCode == Enum.KeyCode.V) and 
 			                (UserInputService:IsKeyDown(Enum.KeyCode.LeftControl) or 
 			                 UserInputService:IsKeyDown(Enum.KeyCode.RightControl) or
@@ -4687,7 +5079,6 @@ local script = G2L["9b8"];
 			
 			if isCtrlV then
 				task.wait(0.05) -- Даем время для вставки текста
-				-- Убираем пробелы из вставленного текста
 				if textBox.Text and textBox.Text ~= "" then
 					textBox.Text = textBox.Text:gsub("%s+", "")
 				end
@@ -4697,7 +5088,6 @@ local script = G2L["9b8"];
 	
 	joinButton.MouseButton1Click:Connect(joinByJobID)
 	
-	-- Поддержка Enter для TextBox
 	textBox.FocusLost:Connect(function(enterPressed)
 		if enterPressed and textBox.Text ~= "" and textBox.Text ~= "Enter JobID..." then
 			joinByJobID()
@@ -4705,7 +5095,6 @@ local script = G2L["9b8"];
 	end)
 end;
 task.spawn(C_9b8);
--- StarterGui.Ravion.Main.Server.Server.Copy JobID.CopyJobIDScript
 local function C_9c4()
 local script = G2L["9c4"];
 	local copyButton = script.Parent
@@ -4719,11 +5108,9 @@ local script = G2L["9c4"];
 	
 	local function copyToClipboard(text)
 		pcall(function()
-			-- Используем setclipboard если доступен
 			if setclipboard then
 				setclipboard(text)
 			else
-				-- Альтернативный метод через GUI
 				local ScreenGui = Instance.new("ScreenGui")
 				ScreenGui.Name = "ClipboardHelper"
 				ScreenGui.Parent = Players.LocalPlayer:WaitForChild("PlayerGui")
@@ -4787,7 +5174,68 @@ local script = G2L["9c4"];
 	end)
 end;
 task.spawn(C_9c4);
--- StarterGui.Ravion.Main.Setting.Setting.Transparency.TransparencySlider.Slider.TransparencySliderScript
+local function C_9c03()
+local script = G2L["9c03"];
+	local button = script.Parent
+	local TeleportService = game:GetService("TeleportService")
+	local HttpService = game:GetService("HttpService")
+	local Players = game:GetService("Players")
+	local TweenService = game:GetService("TweenService")
+	
+	local normalColor = button.BackgroundColor3
+	local pressedColor = Color3.fromRGB(141, 141, 141)
+	local tweenInfo = TweenInfo.new(0.13, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
+	
+	button.MouseButton1Click:Connect(function()
+		local pressTween = TweenService:Create(button, tweenInfo, {BackgroundColor3 = pressedColor})
+		pressTween:Play()
+		
+		button.Text = "Finding..."
+		
+		local success, servers = pcall(function()
+			return HttpService:JSONDecode(game:HttpGet("https://games.roblox.com/v1/games/" .. game.PlaceId .. "/servers/Public?sortOrder=Asc&limit=100"))
+		end)
+		
+		if success and servers and servers.data then
+			local currentJobId = game.JobId
+			local foundServer = false
+			
+			for _, server in ipairs(servers.data) do
+				if server.id ~= currentJobId and server.playing < server.maxPlayers then
+					foundServer = true
+					button.Text = "Hopping..."
+					
+					local hopSuccess = pcall(function()
+						TeleportService:TeleportToPlaceInstance(game.PlaceId, server.id, Players.LocalPlayer)
+					end)
+					
+					if not hopSuccess then
+						button.Text = "Error!"
+						task.wait(1.5)
+						button.Text = "Server Hop"
+					end
+					break
+				end
+			end
+			
+			if not foundServer then
+				button.Text = "No Servers!"
+				task.wait(1.5)
+				button.Text = "Server Hop"
+			end
+		else
+			button.Text = "Error!"
+			task.wait(1.5)
+			button.Text = "Server Hop"
+		end
+		
+		task.delay(0.15, function()
+			local revertTween = TweenService:Create(button, tweenInfo, {BackgroundColor3 = normalColor})
+			revertTween:Play()
+		end)
+	end)
+end;
+task.spawn(C_9c03);
 local function C_9f2()
 local script = G2L["9f2"];
 	local slider = script.Parent
@@ -4821,10 +5269,8 @@ local script = G2L["9f2"];
 		value = math.clamp(value, 0, 1)
 		currentValue = value
 		
-		-- Инвертируем: 0 = непрозрачно, 1 = прозрачно
 		local transparency = minTransparency + (maxTransparency - minTransparency) * value
 		
-		-- Применяем ко всем меню
 		for _, menu in ipairs(allMenus) do
 			if menu and menu.Parent then
 				local tween = TweenService:Create(menu, TweenInfo.new(0.15, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {BackgroundTransparency = transparency})
@@ -4832,14 +5278,11 @@ local script = G2L["9f2"];
 			end
 		end
 		
-		-- Обновляем позицию слайдера (инвертируем обратно для отображения)
 		slider.Size = UDim2.new(value, 0, 1, 0)
 	end
 	
-	-- Инициализация (прозрачность 0 изначально)
 	local function initializeSlider()
 		task.wait(0.1) -- Ждем инициализации
-		-- Устанавливаем прозрачность 0 для всех меню
 		for _, menu in ipairs(allMenus) do
 			if menu then
 				menu.BackgroundTransparency = 0
@@ -4848,7 +5291,6 @@ local script = G2L["9f2"];
 		updateTransparency(0) -- Устанавливаем слайдер в начало
 	end
 	
-	-- Улучшенная функция получения позиции (для Mouse и Touch)
 	local function getRelativePosition()
 		local guiInset = GuiService:GetGuiInset()
 		local touchPos = UserInputService:GetMouseLocation() - guiInset
@@ -4864,7 +5306,6 @@ local script = G2L["9f2"];
 		return math.clamp(relativeX, 0, 1)
 	end
 	
-	-- Обработка начала перетаскивания
 	local function startDragging(input)
 		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
 			isDragging = true
@@ -4873,7 +5314,6 @@ local script = G2L["9f2"];
 		end
 	end
 	
-	-- Обработка изменения позиции
 	local function onInputChanged(input, gameProcessed)
 		if gameProcessed then return end
 		if not isDragging then return end
@@ -4884,25 +5324,110 @@ local script = G2L["9f2"];
 		end
 	end
 	
-	-- Обработка окончания перетаскивания
 	local function endDragging(input)
 		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
 			isDragging = false
 		end
 	end
 	
-	-- Подключаем обработчики
 	slider.InputBegan:Connect(startDragging)
 	sliderFrame.InputBegan:Connect(startDragging)
 	
 	UserInputService.InputChanged:Connect(onInputChanged)
 	UserInputService.InputEnded:Connect(endDragging)
 	
-	-- Инициализация
 	task.spawn(initializeSlider)
 end;
 task.spawn(C_9f2);
--- StarterGui.Ravion.Main.Top.Close.CloseMenu
+local function C_unload()
+local script = G2L["unload5"];
+	local unloadButton = script.Parent
+	local TweenService = game:GetService("TweenService")
+	local Players = game:GetService("Players")
+	
+	local defaultColor = Color3.fromRGB(177, 54, 23)
+	local hoverColor = Color3.fromRGB(220, 70, 30)
+	local pressedColor = Color3.fromRGB(140, 40, 15)
+	
+	local tweenInfo = TweenInfo.new(
+		0.2,
+		Enum.EasingStyle.Quad,
+		Enum.EasingDirection.Out
+	)
+	
+	local function tweenColor(targetColor)
+		local tween = TweenService:Create(unloadButton, tweenInfo, {
+			BackgroundColor3 = targetColor
+		})
+		tween:Play()
+	end
+	
+	unloadButton.MouseEnter:Connect(function()
+		tweenColor(hoverColor)
+	end)
+	
+	unloadButton.MouseLeave:Connect(function()
+		tweenColor(defaultColor)
+	end)
+	
+	unloadButton.MouseButton1Down:Connect(function()
+		tweenColor(pressedColor)
+	end)
+	
+	unloadButton.MouseButton1Up:Connect(function()
+		tweenColor(hoverColor)
+	end)
+	
+	unloadButton.MouseButton1Click:Connect(function()
+		-- Show notification before unloading
+		if _G.RavionNotify then
+			_G.RavionNotify.createNotification("Unload", "Removing GUI...")
+		end
+		
+		-- Wait a moment for notification to show
+		task.wait(0.5)
+		
+		-- Clean up global variables
+		_G.RavionNotify = nil
+		
+		-- Find and destroy the main GUI
+		local playerGui = Players.LocalPlayer:WaitForChild("PlayerGui")
+		local ravionGui = playerGui:FindFirstChild("Ravion")
+		
+		if ravionGui then
+			-- Fade out animation
+			local mainFrame = ravionGui:FindFirstChild("Main")
+			if mainFrame then
+				local fadeTween = TweenService:Create(mainFrame, TweenInfo.new(0.3), {
+					BackgroundTransparency = 1
+				})
+				fadeTween:Play()
+				
+				-- Fade out all children
+				for _, child in ipairs(mainFrame:GetDescendants()) do
+					if child:IsA("GuiObject") then
+						pcall(function()
+							TweenService:Create(child, TweenInfo.new(0.3), {
+								BackgroundTransparency = 1,
+								TextTransparency = 1
+							}):Play()
+						end)
+					end
+				end
+				
+				task.wait(0.3)
+			end
+			
+			-- Destroy the GUI
+			ravionGui:Destroy()
+		end
+	end)
+	
+	if unloadButton then
+		unloadButton.BackgroundColor3 = defaultColor
+	end
+end;
+task.spawn(C_unload);
 local function C_9d()
 local script = G2L["9d"];
 	local CloseButton = script.Parent
@@ -4947,7 +5472,6 @@ local script = G2L["9d"];
 	end)
 end;
 task.spawn(C_9d);
--- StarterGui.Ravion.GrappleMenu.DraggableMain
 local function C_a9()
 local script = G2L["a9"];
 	local Main = script.Parent
@@ -5011,7 +5535,6 @@ local script = G2L["a9"];
 		end
 	end)
 	
-	-- Очистка при уничтожении
 	Main.AncestryChanged:Connect(function()
 		if not Main.Parent then
 			cleanupDrag()
@@ -5024,7 +5547,6 @@ local script = G2L["a9"];
 	
 end;
 task.spawn(C_a9);
--- StarterGui.Ravion.GrappleMenu.Top.Close.CloseMenu
 local function C_ae()
 local script = G2L["ae"];
 	local CloseButton = script.Parent
@@ -5069,7 +5591,6 @@ local script = G2L["ae"];
 	end)
 end;
 task.spawn(C_ae);
--- StarterGui.Ravion.GrappleMenu.Speed120.Toggle.SpeedHackGrappleScript
 local function C_b7()
 local script = G2L["b7"];
 	local toggleButton = script.Parent
@@ -5302,7 +5823,6 @@ local script = G2L["b7"];
 	initialize()
 end;
 task.spawn(C_b7);
--- StarterGui.Ravion.FloatMenu.DraggableMain
 local function C_c3()
 local script = G2L["c3"];
 	local Main = script.Parent
@@ -5366,7 +5886,6 @@ local script = G2L["c3"];
 		end
 	end)
 	
-	-- Очистка при уничтожении
 	Main.AncestryChanged:Connect(function()
 		if not Main.Parent then
 			cleanupDrag()
@@ -5379,7 +5898,6 @@ local script = G2L["c3"];
 	
 end;
 task.spawn(C_c3);
--- StarterGui.Ravion.FloatMenu.Top.Close.CloseMenu
 local function C_c8()
 local script = G2L["c8"];
 	local CloseButton = script.Parent
@@ -5424,7 +5942,6 @@ local script = G2L["c8"];
 	end)
 end;
 task.spawn(C_c8);
--- StarterGui.Ravion.FloatMenu.Floatv2.Toggle.FloatV2Script
 local function C_d1()
 local script = G2L["d1"];
 	local toggleButton = script.Parent
@@ -5538,7 +6055,6 @@ local script = G2L["d1"];
 	
 end;
 task.spawn(C_d1);
--- StarterGui.Ravion.FloatMenu.Floatv1.Toggle.FloatV1Script
 local function C_db()
 local script = G2L["db"];
 	local toggleButton = script.Parent
@@ -5574,7 +6090,6 @@ local script = G2L["db"];
 		end
 	end
 	
-	-- Flight logic (BodyVelocity, legacy)
 	local function startFlying_BodyVelocity()
 		local player = Players.LocalPlayer
 		if not player or not player.Character or not player.Character:FindFirstChild("HumanoidRootPart") then
@@ -5583,7 +6098,6 @@ local script = G2L["db"];
 		local char = player.Character
 		local root = char:FindFirstChild("HumanoidRootPart")
 	
-		-- Create BodyVelocity for flight
 		local bv = Instance.new("BodyVelocity")
 		bv.MaxForce = Vector3.new(1e5, 1e5, 1e5)
 		bv.P = 1e4
@@ -5592,12 +6106,10 @@ local script = G2L["db"];
 	
 		flightConnection = RunService.Heartbeat:Connect(function()
 			if not Camera or not root or not bv then return end
-			-- Use camera's lookVector
 			local look = Camera.CFrame.LookVector
 			bv.Velocity = look * FLY_SPEED
 		end)
 	
-		-- Prevent falling animation
 		local humanoid = char:FindFirstChildOfClass("Humanoid")
 		if humanoid then
 			humanoid.PlatformStand = true
@@ -5612,27 +6124,23 @@ local script = G2L["db"];
 		local char = player.Character
 		local root = char:FindFirstChild("HumanoidRootPart")
 	
-		-- Remove BodyVelocity
 		for i, obj in root:GetChildren() do
 			if obj:IsA("BodyVelocity") then
 				obj:Destroy()
 			end
 		end
 	
-		-- Disconnect flight loop
 		if flightConnection then
 			flightConnection:Disconnect()
 			flightConnection = nil
 		end
 	
-		-- Restore humanoid state
 		local humanoid = char:FindFirstChildOfClass("Humanoid")
 		if humanoid then
 			humanoid.PlatformStand = false
 		end
 	end
 	
-	-- Improved flight logic (less detectable)
 	local function startFlying_Stealth()
 		local player = Players.LocalPlayer
 		if not player or not player.Character or not player.Character:FindFirstChild("HumanoidRootPart") then
@@ -5646,9 +6154,7 @@ local script = G2L["db"];
 		flightConnection = RunService.Heartbeat:Connect(function()
 			if not Camera or not root or not humanoid then return end
 			local look = Camera.CFrame.LookVector
-			-- Move in camera direction, but use Humanoid:Move for natural movement
 			humanoid:Move(look * FLY_SPEED, true)
-			-- Optionally, set AssemblyLinearVelocity for a small boost (not extreme)
 			root.AssemblyLinearVelocity = look * FLY_SPEED
 		end)
 	end
@@ -5663,18 +6169,15 @@ local script = G2L["db"];
 		local humanoid = char:FindFirstChildOfClass("Humanoid")
 		if not humanoid then return end
 	
-		-- Disconnect flight loop
 		if flightConnection then
 			flightConnection:Disconnect()
 			flightConnection = nil
 		end
 	
-		-- Stop movement
 		humanoid:Move(Vector3.new(0,0,0), true)
 		root.AssemblyLinearVelocity = Vector3.new(0,0,0)
 	end
 	
-	-- Choose which flight logic to use
 	local USE_STEALTH_FLIGHT = true -- set to true for improved anti-cheat bypass
 	
 	toggleButton.MouseButton1Click:Connect(function()
@@ -5704,7 +6207,6 @@ local script = G2L["db"];
 	
 end;
 task.spawn(C_db);
--- StarterGui.Ravion.Open/Close.DraggableMain
 local function C_e4()
 local script = G2L["e4"];
 	local Main = script.Parent
@@ -5786,7 +6288,6 @@ local script = G2L["e4"];
 		end
 	end)
 	
-	-- Очистка при уничтожении
 	Main.AncestryChanged:Connect(function()
 		if not Main.Parent then
 			cleanupDrag()
@@ -5798,7 +6299,6 @@ local script = G2L["e4"];
 	end)
 end;
 task.spawn(C_e4);
--- StarterGui.Ravion.3rdMenu.DraggableMain
 local function C_ea()
 local script = G2L["ea"];
 	local Main = script.Parent
@@ -5862,7 +6362,6 @@ local script = G2L["ea"];
 		end
 	end)
 	
-	-- Очистка при уничтожении
 	Main.AncestryChanged:Connect(function()
 		if not Main.Parent then
 			cleanupDrag()
@@ -5875,7 +6374,6 @@ local script = G2L["ea"];
 	
 end;
 task.spawn(C_ea);
--- StarterGui.Ravion.3rdMenu.Top.Close.CloseMenu
 local function C_ef()
 local script = G2L["ef"];
 	local CloseButton = script.Parent
@@ -5920,7 +6418,6 @@ local script = G2L["ef"];
 	end)
 end;
 task.spawn(C_ef);
--- StarterGui.Ravion.3rdMenu.3rdFloor.Toggle.Qwe2rScript
 local function C_f8()
 local script = G2L["f8"];
 	local toggleButton = script.Parent
@@ -6016,9 +6513,15 @@ local script = G2L["f8"];
 		if isToggled then
 			updateCircle(toggledPos, toggledColor)
 			startLift()
+			if _G.RavionNotify then
+				_G.RavionNotify.createNotification("3rd Floor Lift", "Enabled")
+			end
 		else
 			updateCircle(defaultPos, defaultColor)
 			stopLift()
+			if _G.RavionNotify then
+				_G.RavionNotify.createNotification("3rd Floor Lift", "Disabled")
+			end
 		end
 	end)
 	
