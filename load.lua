@@ -407,7 +407,7 @@ G2L["2ca"]["TextColor3"] = Color3.fromRGB(213, 213, 213);
 G2L["2ca"]["BackgroundTransparency"] = 1;
 G2L["2ca"]["Size"] = UDim2.new(0, 155, 0, 15);
 G2L["2ca"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["2ca"]["Text"] = [[Semi Invis]];
+G2L["2ca"]["Text"] = [[Semi Invisible]];
 G2L["2ca"]["Position"] = UDim2.new(0.04362, 0, 0.24138, 0);
 
 
