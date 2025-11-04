@@ -2503,6 +2503,27 @@ NotificationManager.enabled = true
 NotificationManager.activeNotifications = {}
 NotificationManager.maxNotifications = 3
 
+-- Global Function State Manager
+_G.RavionFunctions = {
+	Float = {enabled = false, disable = nil},
+	NoClip = {enabled = false, disable = nil},
+	SemiInvis = {enabled = false, disable = nil},
+	InfinityJump = {enabled = false, disable = nil},
+	GodMode = {enabled = false, disable = nil},
+	Esp = {enabled = false, disable = nil},
+	AntiRagdoll = {enabled = false, disable = nil},
+	XRay = {enabled = false, disable = nil},
+	EspItem = {enabled = false, disable = nil},
+	EspTime = {enabled = false, disable = nil},
+	EspPlayer = {enabled = false, disable = nil},
+	AntiAfk = {enabled = false, disable = nil},
+	RemoveFog = {enabled = false, disable = nil},
+	GrappleSpeed = {enabled = false, disable = nil},
+	Flight = {enabled = false, disable = nil},
+	Fly = {enabled = false, disable = nil},
+	Platform = {enabled = false, disable = nil}
+}
+
 function NotificationManager.createNotification(title, message)
 	if not NotificationManager.enabled then return end
 	
@@ -2898,6 +2919,19 @@ local script = G2L["1c"];
 		end
 	end
 	
+	local function disableFloat()
+		isToggled = false
+		updateCircle(defaultPos, defaultColor)
+		if grappleMenu then
+			grappleMenu.Visible = false
+		end
+	end
+	
+	-- Register disable function
+	if _G.RavionFunctions then
+		_G.RavionFunctions.Float.disable = disableFloat
+	end
+	
 	toggleButton.MouseButton1Click:Connect(function()
 		isToggled = not isToggled
 		if isToggled then
@@ -2905,13 +2939,16 @@ local script = G2L["1c"];
 			if grappleMenu then
 				grappleMenu.Visible = true
 			end
+			if _G.RavionFunctions then
+				_G.RavionFunctions.Float.enabled = true
+			end
 			if _G.RavionNotify then
 				_G.RavionNotify.createNotification("Float", "Enabled")
 			end
 		else
-			updateCircle(defaultPos, defaultColor)
-			if grappleMenu then
-				grappleMenu.Visible = false
+			disableFloat()
+			if _G.RavionFunctions then
+				_G.RavionFunctions.Float.enabled = false
 			end
 			if _G.RavionNotify then
 				_G.RavionNotify.createNotification("Float", "Disabled")
@@ -3071,6 +3108,22 @@ local script = G2L["2c5"];
 		end
 	end
 	
+	local function disableSemiInvis()
+		if isEnabled then
+			isEnabled = false
+			if SemiInvis.StopSemiInvis then
+				SemiInvis.StopSemiInvis()
+			end
+		end
+		isToggled = false
+		updateCircle(defaultPos, defaultColor)
+	end
+	
+	-- Register disable function
+	if _G.RavionFunctions then
+		_G.RavionFunctions.SemiInvis.disable = disableSemiInvis
+	end
+	
 	LocalPlayer.CharacterAdded:Connect(function()
 		if isEnabled then
 			wait(1)
@@ -3085,6 +3138,9 @@ local script = G2L["2c5"];
 		if isToggled then
 			updateCircle(toggledPos, toggledColor)
 			toggleSemiInvis()
+			if _G.RavionFunctions then
+				_G.RavionFunctions.SemiInvis.enabled = isEnabled
+			end
 			if _G.RavionNotify then
 				_G.RavionNotify.createNotification("Semi Invis", "Enabled")
 			end
@@ -3206,19 +3262,35 @@ local script = G2L["31"];
 		end
 	end
 	
+	local function disableInfinityJump()
+		isToggled = false
+		AirJumpEnabled = false
+		DisableAirJump()
+		updateCircle(defaultPos, defaultColor)
+	end
+	
+	-- Register disable function
+	if _G.RavionFunctions then
+		_G.RavionFunctions.InfinityJump.disable = disableInfinityJump
+	end
+	
 	toggleButton.MouseButton1Click:Connect(function()
 		isToggled = not isToggled
 		if isToggled then
 			updateCircle(toggledPos, toggledColor)
 			AirJumpEnabled = true
 			EnableAirJump()
+			if _G.RavionFunctions then
+				_G.RavionFunctions.InfinityJump.enabled = true
+			end
 			if _G.RavionNotify then
 				_G.RavionNotify.createNotification("Infinity Jump", "Enabled")
 			end
 		else
-			updateCircle(defaultPos, defaultColor)
-			AirJumpEnabled = false
-			DisableAirJump()
+			disableInfinityJump()
+			if _G.RavionFunctions then
+				_G.RavionFunctions.InfinityJump.enabled = false
+			end
 			if _G.RavionNotify then
 				_G.RavionNotify.createNotification("Infinity Jump", "Disabled")
 			end
@@ -3364,27 +3436,43 @@ local script = G2L["41"];
 		end
 	end
 	
+	local function disableGodMode()
+		isToggled = false
+		godModeActive = false
+		disableGodModeLoop()
+		updateCircle(defaultPos, defaultColor)
+		local player = Players.LocalPlayer
+		local character = player.Character
+		if character then
+			local humanoid = character:FindFirstChildOfClass("Humanoid")
+			if humanoid then
+				humanoid.MaxHealth = 100
+				humanoid.Health = humanoid.MaxHealth
+			end
+		end
+	end
+	
+	-- Register disable function
+	if _G.RavionFunctions then
+		_G.RavionFunctions.GodMode.disable = disableGodMode
+	end
+	
 	toggleButton.MouseButton1Click:Connect(function()
 		isToggled = not isToggled
 		if isToggled then
 			updateCircle(toggledPos, toggledColor)
 			godModeActive = true
 			enableGodModeLoop()
+			if _G.RavionFunctions then
+				_G.RavionFunctions.GodMode.enabled = true
+			end
 			if _G.RavionNotify then
 				_G.RavionNotify.createNotification("God Mode", "Enabled")
 			end
 		else
-			updateCircle(defaultPos, defaultColor)
-			godModeActive = false
-			disableGodModeLoop()
-			local player = Players.LocalPlayer
-			local character = player.Character
-			if character then
-				local humanoid = character:FindFirstChildOfClass("Humanoid")
-				if humanoid then
-					humanoid.MaxHealth = 100
-					humanoid.Health = humanoid.MaxHealth
-				end
+			disableGodMode()
+			if _G.RavionFunctions then
+				_G.RavionFunctions.GodMode.enabled = false
 			end
 			if _G.RavionNotify then
 				_G.RavionNotify.createNotification("God Mode", "Disabled")
@@ -3508,6 +3596,25 @@ local script = G2L["4b"];
 		end
 	end
 	
+	local function disableEsp()
+		isToggled = false
+		espActive = false
+		removeESPFromAllPlayers()
+		updateCircle(defaultPos, defaultColor)
+		for _, conn in ipairs(connections) do
+			if conn and conn.Disconnect then
+				conn:Disconnect()
+			end
+		end
+		connections = {}
+		highlights = {}
+	end
+	
+	-- Register disable function
+	if _G.RavionFunctions then
+		_G.RavionFunctions.Esp.disable = disableEsp
+	end
+	
 	toggleButton.MouseButton1Click:Connect(function()
 		isToggled = not isToggled
 		if isToggled then
@@ -3524,21 +3631,17 @@ local script = G2L["4b"];
 			
 			local conn = Players.PlayerAdded:Connect(onPlayerAdded)
 			table.insert(connections, conn)
+			if _G.RavionFunctions then
+				_G.RavionFunctions.Esp.enabled = true
+			end
 			if _G.RavionNotify then
 				_G.RavionNotify.createNotification("ESP Player", "Enabled")
 			end
 		else
-			updateCircle(defaultPos, defaultColor)
-			espActive = false
-			removeESPFromAllPlayers()
-			
-			for _, conn in ipairs(connections) do
-				if conn and conn.Disconnect then
-					conn:Disconnect()
-				end
+			disableEsp()
+			if _G.RavionFunctions then
+				_G.RavionFunctions.Esp.enabled = false
 			end
-			connections = {}
-			highlights = {}
 			if _G.RavionNotify then
 				_G.RavionNotify.createNotification("ESP Player", "Disabled")
 			end
@@ -3811,19 +3914,35 @@ local script = G2L["a04"];
 		end)
 	end
 	
+	local function disableAntiRagdollFunc()
+		isToggled = false
+		antiRagdollActive = false
+		disableAntiRagdoll()
+		updateCircle(defaultPos, defaultColor)
+	end
+	
+	-- Register disable function
+	if _G.RavionFunctions then
+		_G.RavionFunctions.AntiRagdoll.disable = disableAntiRagdollFunc
+	end
+	
 	toggleButton.MouseButton1Click:Connect(function()
 		isToggled = not isToggled
 		if isToggled then
 			updateCircle(toggledPos, toggledColor)
 			antiRagdollActive = true
 			enableAntiRagdoll()
+			if _G.RavionFunctions then
+				_G.RavionFunctions.AntiRagdoll.enabled = true
+			end
 			if _G.RavionNotify then
 				_G.RavionNotify.createNotification("Anti-Ragdoll", "Enabled")
 			end
 		else
-			updateCircle(defaultPos, defaultColor)
-			antiRagdollActive = false
-			disableAntiRagdoll()
+			disableAntiRagdollFunc()
+			if _G.RavionFunctions then
+				_G.RavionFunctions.AntiRagdoll.enabled = false
+			end
 			if _G.RavionNotify then
 				_G.RavionNotify.createNotification("Anti-Ragdoll", "Disabled")
 			end
@@ -3943,18 +4062,34 @@ local script = G2L["x04"];
 		end
 		processedParts = {}
 	end
+	
+	local function disableXRayFunc()
+		isToggled = false
+		disableXRay()
+		updateCircle(defaultPos, defaultColor)
+	end
+	
+	-- Register disable function
+	if _G.RavionFunctions then
+		_G.RavionFunctions.XRay.disable = disableXRayFunc
+	end
 
 	toggleButton.MouseButton1Click:Connect(function()
 		isToggled = not isToggled
 		if isToggled then
 			updateCircle(toggledPos, toggledColor)
 			enableXRay()
+			if _G.RavionFunctions then
+				_G.RavionFunctions.XRay.enabled = true
+			end
 			if _G.RavionNotify then
 				_G.RavionNotify.createNotification("X-Ray", "Enabled")
 			end
 		else
-			updateCircle(defaultPos, defaultColor)
-			disableXRay()
+			disableXRayFunc()
+			if _G.RavionFunctions then
+				_G.RavionFunctions.XRay.enabled = false
+			end
 			if _G.RavionNotify then
 				_G.RavionNotify.createNotification("X-Ray", "Disabled")
 			end
@@ -5381,14 +5516,33 @@ local script = G2L["unload5"];
 	unloadButton.MouseButton1Click:Connect(function()
 		-- Show notification before unloading
 		if _G.RavionNotify then
-			_G.RavionNotify.createNotification("Unload", "Removing GUI...")
+			_G.RavionNotify.createNotification("Unload", "Disabling all functions...")
 		end
 		
 		-- Wait a moment for notification to show
-		task.wait(0.5)
+		task.wait(0.3)
+		
+		-- Disable all active functions
+		if _G.RavionFunctions then
+			for funcName, funcData in pairs(_G.RavionFunctions) do
+				if funcData.enabled and funcData.disable then
+					pcall(function()
+						funcData.disable()
+					end)
+				end
+			end
+		end
+		
+		-- Show second notification
+		if _G.RavionNotify then
+			_G.RavionNotify.createNotification("Unload", "Removing GUI...")
+		end
+		
+		task.wait(0.3)
 		
 		-- Clean up global variables
 		_G.RavionNotify = nil
+		_G.RavionFunctions = nil
 		
 		-- Find and destroy the main GUI
 		local playerGui = Players.LocalPlayer:WaitForChild("PlayerGui")
